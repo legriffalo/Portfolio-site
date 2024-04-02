@@ -1,0 +1,37 @@
+{
+"project1":{
+    "name":"Molkky madness app",
+    "coverimage":"a",
+    "description":"A scoring and custom rule making app for web/mobile",
+    "specifics": ["This was built using javaScript, html, css in the first instance to make a webpage to test the useability",
+                  "Then using githubpages and reacte native webview I published it as a mobile app."],
+    "tags":["html","javaScript","css","react-native","googlePlay", "app","web","front-end"]
+    },
+
+"project2":{
+    "name":"Finnish webscraper",
+    "coverimage":"a",
+    "description":"The intial scraping phase of a larger project",
+    "specifics":["I needed a database of Finnish words on which to base later learning projects",
+                ""],
+    "tags":"a"
+    },
+
+"project3":{
+    "name":"Boppit",
+    "coverimage":"a",
+    "description":"A bit of fun playing with control structures and sounds in JS",
+    "specifics":[],
+    "tags":"a"
+    },
+
+"project4":{
+    "name":"Image storer",
+    "coverimage":"a",
+    "description":"A bit of fun playing with control structures and sounds in JS",
+    "specifics":[],
+    "tags":"a"
+    }
+
+
+}

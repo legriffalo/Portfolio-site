@@ -1,0 +1,77 @@
+
+body{
+  background-image: linear-gradient(to right,rgb(92, 7, 92), black);
+}
+#topribbon{
+  height:18vh;
+  background-color:#ccc;
+  border-radius: 1vh;
+  /* border-style: solid; */
+  text-align: center;
+}
+
+#topribbon img{
+  height: 12vh;
+  margin:auto;
+  display:block;
+}
+
+
+#topribbon button{
+  position:absolute; top:2vh; right:1.5vw; 
+  width:10vw;
+  border-radius: 2vh;
+}
+
+#nav{
+  margin-top: 2px;
+  width: 100vh;
+  border-radius: 2vh;
+  display:flex;
+  flex-direction: row;
+
+}
+
+#nav a{
+  width:100%;
+  text-align: center;  
+  background-color: #ccc;
+  border-radius: 2vh;
+  height:3vh;
+}
+
+#nav a:hover{
+  background-color:#444;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+#accordion-container {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display:flex;
+    flex-direction: row;
+
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    /* display: none; */
+    /* overflow: hidden; */
+  }
+
+  
