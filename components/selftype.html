@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NG portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href = 'selftype.css' rel = 'stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div>
+    <h2 id = 'head' class = 'selftype' data-text = '{"messages":["a developer","an educator","a data scientist","..."]}'>
+        
+        <span id = 'start'>I am </span>
+        <p id = 'typed'><span class = 'typed'></span><span id = 'cursor' class = 'hidden cursor hidden'>|</span>
+        <!-- <span class = 'cursor'>|</span> -->
+        </p>
+        
+    </h2>
+</div>
+
+
+<script>
+function hideShow(el){
+    document.getElementById(el).classList.toggle('hidden');
+}
+
+let blink  = setInterval(()=>{hideShow('cursor')},600)
+
+function typeWriter(id,i,j){
+    let el = document.getElementById(id)
+    let typed = el.getElementsByClassName('typed')[0];
+    let messages = [...JSON.parse(el.dataset.text).messages];
+    let txt = messages[j];
+    let speed = 100;
+
+    if (i < txt.length && j <messages.length) {
+
+        typed.innerHTML += txt.charAt(i);
+        i++;  
+    }
+    else if(j < messages.length-1){
+        typed.innerHTML += '<br>';
+        i = 0;
+        speed = 1000;
+        j++
+    }
+    else{
+        setTimeout(()=>{typed.innerHTML ='';},1300);
+        
+        i = 0;
+        j = 0;
+        speed = 2000;
+    }
+    setTimeout(()=>{typeWriter(id,i,j)}, speed);
+}
+
+typeWriter('head',0,0);
+
+
+</script>
