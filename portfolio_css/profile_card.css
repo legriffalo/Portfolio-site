@@ -1,6 +1,61 @@
+:root{
+    --prime-color:#5f5bbe;
+    --hover-color:white;
+}
+.buttons{
+    position:absolute;
+    bottom:12px;
+    width:100%;
+    padding: 0 20px;
+    display:flex;
+    font-size:5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons .social{
+    display:flex;
+    gap:15px;
+}
+
+.buttons .social i{
+    color:white;
+    cursor:pointer;
+}
+
+.buttons .social i:hover{
+    transition: all 0.4s ease-in-out;
+    background-color:var(--hover-color);
+    /* background-color:red!important; */
+    color:#4f378a;
+    cursor:pointer;
+    border-radius:50%;
+
+}
+
+.buttons .link{
+    text-decoration: none;
+    color:var(--prime-color);
+    background:white;
+    padding:7px 10px;
+    border-radius: 20px;
+    font-size:3vh;
+
+}
+
+.buttons .link:hover{
+    transition: all 0.4s ease-in-out;
+    background:#4f378a;
+    /* background-color:red!important; */
+
+    color:#fff;
+    cursor:pointer;
+
+
+}
 .frozen .profile-pic{
-    width:100px;
-    height: 100px;
+    width:18vh;
+    height: 18vh;
     top:10px;
     left:10px;
     z-index:3;
@@ -44,10 +99,7 @@ body{
     min-height: 100vh;
 }
 
-:root{
-    --prime-color:#5f5bbe;
-    --hover-color:#OOO;
-}
+
 
 .profile-card{
     top:0;
@@ -69,9 +121,10 @@ body{
 }
 
 .profile-pic{
-    top:5vh;
+    top:15vh;
     left:15vw;
-    width:60vw;
+    width:60vmin;
+    height:60vmin;
     /* border-radius: 80vw; */
     z-index:1;
     border:2px solid white;
@@ -87,12 +140,12 @@ body{
     top:0px;
     left:10%;
     border-radius:50%;
-    transition:0.5s ease-in-out
+    transition:0.5s ease-in-out;
 }
 
 .profile-card:hover .profile-pic{
-    width:100px;
-    height: 100px;
+    width:18vh;
+    height: 18vh;
     top:10px;
     left:10px;
     z-index:3;
@@ -164,45 +217,3 @@ body{
     width:80%;
 }
 
-.buttons{
-    position:absolute;
-    bottom:12px;
-    width:100%;
-    padding: 0 20px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttons .social{
-    display:flex;
-    gap:15px;
-}
-
-.buttons .social i{
-    color:white;
-    cursor:pointer;
-}
-
-.buttons social i:hover{
-    transition: all 0.4s ease-in-out;
-    color:var(--hover-color);
-    color:#fff;
-}
-
-.buttons .link{
-    text-decoration: none;
-    color:var(--prime-color);
-    background:white;
-    padding:7px 10px;
-    border-radius: 20px;
-    font-size:0.9rem;
-
-}
-
-.buttons.link:hover{
-    transition: all 0.4s ease-in-out;
-    background:var(--hover-color);
-    color:#fff;
-
-}

@@ -3,6 +3,7 @@
 const data = `{
 
 "1":{
+    "show":"1",
     "name":"Finnish webscraper",
     "coverimage":"./portfolio_assets/image.png",
     "description":"The intial scraping phase of a larger project",
@@ -15,6 +16,7 @@ const data = `{
     },
 
 "2":{
+    "show":"0",
     "name":"Image storage",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Webpage to facilitate collecting image for CNN image recognition projects",
@@ -27,16 +29,18 @@ const data = `{
     },
 
 "3":{
+    "show":"1",
     "name":"Vocab database",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Building and managing postgres database for Finnish language projects",
     "specifics": ["","",""],
     "tags":["SQL","python","flask","back-end"],
-    "link":{"source":"","type":"github"}
+    "link":{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Database%20management","type":"github"}
     },
 
 "4":{
-    "name":"Number recogntion",
+    "show":"1",
+    "name":"Number recognition",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Building a CNN to read digits for use in Finnish language app",
     "specifics": ["","",""],
@@ -45,6 +49,7 @@ const data = `{
     },
 
 "5":{
+    "show":"1",
     "name":"Finnish practice app",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Building a CNN to read digits for use in Finnish language app",
@@ -54,6 +59,7 @@ const data = `{
     },
 
 "6":{
+    "show":"0",
     "name":"Air quality dashboard",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Building a CNN to read digits for use in Finnish language app",
@@ -63,6 +69,7 @@ const data = `{
     },
 
 "7":{
+    "show":"0",
     "name":"10 week Python course",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Building a CNN to read digits for use in Finnish language app",
@@ -72,6 +79,7 @@ const data = `{
     },
 
 "8":{
+    "show":"0",
     "name":"10 week Python course",
     "coverimage":"./portfolio_assets/image.png",
     "description":"Building a CNN to read digits for use in Finnish language app",
@@ -81,13 +89,14 @@ const data = `{
     },
 
 "10":{
-"name":"Molkky madness app",
-"coverimage":"./portfolio_assets/image.png",
-"description":"A scoring and custom rule making app for web/mobile",
-"specifics": ["This was built using javaScript, html, css in the first instance to make a webpage to test the useability",
-                "Then using githubpages and reacte native webview I published it as a mobile app."],
-"tags":["html","javaScript","css","react-native","googlePlay", "app","web","front-end"],
-"link":{"source":"","type":"github"}
+    "show":"0",
+    "name":"Molkky madness app",
+    "coverimage":"./portfolio_assets/image.png",
+    "description":"A scoring and custom rule making app for web/mobile",
+    "specifics": ["This was built using javaScript, html, css in the first instance to make a webpage to test the useability",
+                  "Then using githubpages and reacte native webview I published it as a mobile app."],
+    "tags":["html","javaScript","css","react-native","googlePlay", "app","web","front-end"],
+    "link":{"source":"","type":"github"}
 }
 
 }`

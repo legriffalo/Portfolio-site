@@ -6,10 +6,23 @@ projects = JSON.parse(data)
 console.log(projects);
 
 let projectsList = Object.keys(projects);
+// number of panels required
+let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+let panels = Math.floor(vw/160);
+console.log(panels);
 
+//filter out work in progress projects
+projectsList = projectsList.filter((a)=>{if(projects[a].show ==1) return 1});
+
+console.log(projectsList);
 // watch out for hidden in classes
 for(let i =0;i<projectsList.length;i++){
-  document.getElementById('accordion').innerHTML+= `<div class="card">
+  if(i%panels == 0){
+    document.getElementById('accordion').innerHTML+= `<div id = "panel${i/panels}" class = "panel"></div>`
+  }
+
+  if (projects[projectsList[i]].show ==1 ){
+  document.getElementById(`panel${Math.floor(i/panels)}`).innerHTML+= `<div class="card">
     <img class="background" src="${projects[projectsList[i]].coverimage}">
     <div class="card-content">
       <div class="profile-image">
@@ -25,6 +38,8 @@ for(let i =0;i<projectsList.length;i++){
     
   <div class="backdrop"></div>
   </div>`
+}
+else{}
 }
 
 
