@@ -1,0 +1,29 @@
+body{
+    background:grey;
+    /* display:flex; */
+    justify-content:center;
+    /* align-items: center; */
+    height: 100vh;
+    width:100vw;
+}
+
+.hidden{
+    opacity:0;
+    height:0;
+    overflow-y: hidden;
+}
+
+#searchbar{
+    position:fixed;
+    min-width:40vw;
+    left:25vw;
+    top:7vh;
+    border-style: groove;
+}
+
+#searchbar input{
+    min-width:40vw;
+    
+    border-style: groove;
+}
+a{color:white;}
