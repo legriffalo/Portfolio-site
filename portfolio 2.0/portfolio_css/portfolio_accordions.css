@@ -1,0 +1,206 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"); */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#panechange1{
+  border-radius: 50px 0px 0px 50px;
+  width:3vw;
+  font-size:2vw;
+  background-color: rgba(1,1,1,0.5);
+  color:white;
+
+}
+#panechange2{
+  border-radius: 0px 50px 50px 0px;
+  width:3vw;
+  font-size:2vw;
+  background-color: rgba(1,1,1,0.5);
+  color:white;
+}
+
+#pane2{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:85vw;
+  border-style: dashed;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container{
+  width:90vw;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  border-style: solid;
+  border-color: red;
+  
+}
+
+.panel{
+  display:none;
+
+}
+
+.panelshown {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  /* margin-inline: 50px; */
+  /* border-style: dashed; */
+}
+
+.card {
+  font-size:1.2vw;
+  min-width: 30px;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-timing: 0.35s;
+}
+
+/* .card-content{
+  transform: rotate(90deg);
+  border-style:dashed;
+} */
+
+/* .card.active {
+  flex-grow: 100;
+} */
+
+.card p{
+  
+  width:0;
+  height:0;
+  overflow:hidden;
+}
+
+.card:hover p{
+  /* display:block; */
+  font-size: 0.8em;
+  height:20px;
+  width:100%
+}
+
+.break{
+  flex-basis: 100%;
+  height:0;
+}
+
+.card:hover {
+  flex-grow: 7;
+}
+
+.card > .background {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4);
+  z-index: -1;
+  transition: var(--transition-timing) ease;
+}
+.card:hover > .background {
+  filter: brightness(1);
+}
+
+.card > .card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  /* top: 12vh;
+  right:6vw; */
+  bottom:0;
+  height:5vw;
+  min-width:30vh;
+  overflow: hidden;
+  transition: var(--transition-timing);
+  z-index: 10;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left: 15px;
+  border-radius:30vw;
+
+}
+.card:hover > .card-content {
+  inset: 20px;
+  top: auto;
+  font-size:1.5vw;
+  background-color: rgba(1,1,1,0.5);
+  /* top: 12vh;
+  right:40vw;
+  bottom:0;
+  height:5vw;
+  width:30vh; */
+}
+
+.card-content > * {
+  transition: var(--transition-timing);
+}
+
+.card-content > .profile-image {
+  min-width: 2.5vw;
+  max-width: 2.5vw;
+  /* height: 3vw; */
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card:hover .profile-image {
+  border: 1px solid rgb(110, 252, 205);
+}
+
+.card:hover .profile-image > svg {
+  stroke: rgb(110, 252, 205);
+}
+
+
+/* .profile-image > svg {
+  stroke: #fefefe;
+} */
+
+.card-content > .title {
+  white-space: pre;
+  margin-left: 1%;
+  /* translate: 0 100%; */
+  opacity: 1;
+}
+.card:hover .title {
+  opacity: 1;
+  translate: 0 0;
+  color:rgb(110, 252, 205);
+}
+
+.card > .backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  z-index: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
