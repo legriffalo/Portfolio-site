@@ -5,7 +5,7 @@ console.log(change)
 
 // toggle between projects and personal
 change.addEventListener('pointerdown',(e)=>{
-    console.log('yoyoyoyoyoyo')
+    // console.log('yoyoyoyoyoyo')
 
     document.getElementById('pane1').classList.toggle('hidden');
     document.getElementById('pane2').classList.toggle('hidden');
@@ -21,19 +21,24 @@ change.addEventListener('pointerdown',(e)=>{
     console.log(vw,vh)
 })
 
+
+
+
+// element storing profile picture
 const pic = document.getElementById('pic');
+// flag var for picture switches
 let p = 0
+
+// switch the profile images
 pic.addEventListener('pointerdown',(e)=>{
-
-if(p==0){
-    pic.getElementsByTagName('img')[0].src = './portfolio_assets/grifalogomedium.png';
-    p=1;
-}
-else{
-    pic.getElementsByTagName('img')[0].src = './portfolio_assets/profile.png';
-    p = 0;
-
-}
+    if(p==0){
+        pic.getElementsByTagName('img')[0].src = './portfolio_assets/grifalogomedium.png';
+        p=1;
+    }
+    else{
+        pic.getElementsByTagName('img')[0].src = './portfolio_assets/profile.png';
+        p = 0;
+    }
 
 });
 

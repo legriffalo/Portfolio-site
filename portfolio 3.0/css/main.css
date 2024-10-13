@@ -1,0 +1,166 @@
+body{
+    all:initial;
+    background-color: black;
+    color:white;
+}
+
+.hidden{
+    display:none;
+    opacity:0;
+    height:0px;
+    width: 0px;
+    overflow: hidden;
+}
+
+/* All content in the left hand panel */
+
+#main{
+    margin-top:1vh;
+    width:99vw;
+    border-style: dashed;
+    border-color:red;
+   
+}
+
+#header{
+    border-style:dashed;
+    height:12vh;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+
+}
+
+#titlesouter{
+    width:87%;
+    /* margin-left: 20vw; */
+}
+
+#titlesinner{
+    margin-left:12vw;
+    text-align: center;
+}
+#center{
+    border-style: dashed;
+    border-color: white;
+    color: red;
+    width:90vw;
+    margin:auto;
+    margin-top: 1vh;
+
+}
+
+#searchs{
+    border-style: dashed;
+    border-color:yellow;
+    height:6vh;
+    width:80vw;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#usersearch{
+    width:50vw; 
+}
+
+#projectgrid{
+    margin-top: 1vh;
+    /* height:40vh; */
+    border-style: dashed;
+    border-color: yellow;
+}
+
+
+
+
+
+/* All content in the right hand panel */
+#right{
+    position:fixed;
+    right:1vw;
+    top:25vh;
+    width:20vw;
+    height:65vh;
+    border-style: dashed;
+    border-color:red;
+}
+
+#profile{
+    border-style: dashed;
+    border-color: white;
+}
+
+#pic{
+    width:90%;
+    max-height:20vh;
+    margin:auto;
+    border-style: dashed;
+    border-color: yellow;
+}
+
+#pic img{
+    width:85%;
+    margin:7.5%;
+    height:17vh
+}
+
+
+/* The footer */
+#footer{
+    z-index: 3;
+    border-style:dashed;
+    position:fixed;
+    bottom:1vh;
+    width:99vw;
+    height:5vh;
+    display:flex;
+    font-size:2vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    border-color:darkgrey;
+} 
+
+/* setting link buttons with in the footer */
+.buttons .social{
+    display:flex;
+    gap:15px;
+}
+
+.buttons .social i{
+    color:white;
+    cursor:pointer;
+}
+
+.buttons .social i:hover{
+    transition: all 0.4s ease-in-out;
+    background-color:var(--hover-color);
+ background-color:red!important; 
+    color:#4f378a;
+    cursor:pointer;
+    border-radius:50%;
+
+}
+
+.buttons .link{
+    text-decoration: none;
+    color:var(--prime-color);
+    background:white;
+    padding:7px 10px;
+    border-radius: 20px;
+    font-size:1.6vw;
+
+}
+
+.buttons .link:hover{
+    transition: all 0.4s ease-in-out;
+    background:#4f378a;
+    background-color:red!important; 
+
+    color:#fff;
+    cursor:pointer;
+
+
+} 
