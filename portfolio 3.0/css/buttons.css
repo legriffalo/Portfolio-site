@@ -1,11 +1,11 @@
 
   #rightshow{
-    z-index:10;
+    z-index:2;
     position:fixed;
     right:0;
-    top:17vh;
-    height:63vh;
-    border-radius: 50px 0px 0px 50px;
+    top:27vh;
+    height:35vh;
+    border-radius: 2vh 0 0 2vh;
     width:3vw;
     font-size:2vw;
     text-transform: rotate(90);
@@ -19,9 +19,27 @@
     font-size: 1vw;
   }
 
-.buttons{
+  
+
+  #righthide{
+    height:100%;
+    border-radius: 2vh 0 0 2vh;
+    width:3vw;
+    font-size:2vw;
+    text-transform: rotate(90);
+    background-color: rgba(68, 12, 209, 0.5);
+    color:white;
+  }
+
+  #righthide span{
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: 1vw;
+  }
+
+.searchbuttons{
     width:10vw;
-    height:2vh;
+    height:2.4vh;
     border-radius: 1vh;
     /* margin:auto; */
     margin-top:0.5vh;

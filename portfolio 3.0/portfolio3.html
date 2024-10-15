@@ -4,6 +4,7 @@
   <title>Nick Griffiths Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href = './css/parallax.css' rel = 'stylesheet'>
 
   <link href = './css/selftype.css' rel = 'stylesheet'>
   <link href = './css/main.css' rel = 'stylesheet'>
@@ -11,10 +12,11 @@
   <link href = './css/buttons.css' rel = 'stylesheet'>
 
 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="./js/main.js" defer></script>
 
   <script src="./js/myprojects.js" defer></script>
-
   <script src="./js/selftype.js" defer></script>
   <script src="./js/projectgrid.js" defer></script>
 
@@ -54,20 +56,22 @@
     <div id = "center">
 
         <div id = 'searches'>
-            <div id = "searchbar">
+            <!-- <div id = "searchbar">
                 <input id="usersearch" placeholder="search using key words e.g python"><button id = "go">go</button>
-            </div>
+            </div> -->
+            
             <div id = "quicksearch">
-                <button class = 'buttons'>Python</button>
-                <button class = 'buttons'>JavaScript</button>
-                <button class = 'buttons'>PowerBI</button>
-                <button class = 'buttons'>ML</button>
+                <span><b>Filter:</b> </span>
+                <button class = 'searchbuttons'>Python</button>
+                <button class = 'searchbuttons'>JavaScript</button>
+                <button class = 'searchbuttons'>PowerBI</button>
+                <button class = 'searchbuttons'>ML</button>
             </div>
         </div>
 
 
 
-        <div id = "projectgrid">
+        <div id = "projectgrid" class = "parallax">
 
 
 
@@ -83,7 +87,10 @@
 <!-- right side panel -->
 <div id = "right" class = "hidden">
 
+    <div id = "hidebutton">
+        <button id = "righthide"><span>hide</span></button>
 
+    </div>
     
     <!-- profile section -->
     <div id = "profile" >
@@ -94,7 +101,7 @@
           </div>
 
 
-        <p class = 'tag'>developer|educator|data scientist</p>
+        <p class = 'tag'><b> Developer | Educator | Data scientist</b></p>
         <p class = 'about'>
           I am passionate about Strategic thinking and 
           solving problems, especially when it impacts 
@@ -112,8 +119,8 @@
         </p>
     
     <button>cv</button>
+    <button>cv</button>
 
-    <button id = "inout" class = "popout_button"><</button>
 
 
     </div>
@@ -138,7 +145,7 @@
     </div>
 </div>
 
-<button id = "rightshow"><span>open bio</span></button>
+<button id = "rightshow"><span>Bio</span></button>
 </body>
 
 

@@ -7,7 +7,7 @@ body{
 .hidden{
     display:none;
     opacity:0;
-    height:0px;
+    height:0px !important;
     width: 0px;
     overflow: hidden;
 }
@@ -26,7 +26,7 @@ body{
 #header{
     position:sticky;
     top: 0;
-    z-index:10;
+    z-index:2;
     border-style:dashed;
     height:15vh;
     width:100%;
@@ -76,14 +76,18 @@ body{
 }
 
 
-
+.tag{
+    width:90%;
+    margin:auto;
+    text-align: center;
+}
 
 
 
 #center{
-    border-style: dashed;
-    border-color: white;
-    color: red;
+    /* border-style: dashed;
+    border-color: white; */
+    /* color: red; */
     width:90vw;
     margin:auto;
     margin-top: 1vh;
@@ -91,13 +95,13 @@ body{
 }
 
 #searches{
-    z-index:10;
+    z-index:2;
     background-color: #4f378a;
     position:sticky;
     top:15vh;
     border-style: dashed;
     border-color:yellow;
-    height:6vh;
+    height:4vh;
     width:80vw;
     margin:auto;
     display:flex;
@@ -114,8 +118,8 @@ body{
 #projectgrid{
     margin-top: 1vh;
     /* height:40vh; */
-    border-style: dashed;
-    border-color: yellow;
+    /* border-style: dashed;
+    border-color: yellow; */
 }
 
 
@@ -124,23 +128,32 @@ body{
 
 /* All content in the right hand panel */
 #right{
+    z-index:3;
     position:fixed;
-    right:1vw;
-    top:25vh;
-    width:20vw;
-    height:65vh;
+    right:0vw;
+    top:20vh;
+    width:30vw;
+    height:70vh;
+    display:flex;
+    flex-direction: row;
+    border-radius: 2vh 0 0 2vh;
+
+    background-color: black;
     border-style: dashed;
     border-color:red;
+
 }
 
 #profile{
+    width:98%;
     border-style: dashed;
     border-color: white;
+    padding:0.5vh;
 }
 
 #pic{
     width:90%;
-    max-height:20vh;
+    height:25vh;
     margin:auto;
     border-style: dashed;
     border-color: yellow;
@@ -149,13 +162,13 @@ body{
 #pic img{
     width:85%;
     margin:7.5%;
-    height:17vh
+    height:20vh
 }
 
 
 /* The footer */
 #footer{
-    z-index: 3;
+    z-index: 2;
     border-style:dashed;
     position:fixed;
     bottom:1vh;
@@ -169,6 +182,9 @@ body{
     border-color:darkgrey;
 } 
 
+.buttons{
+    margin-left:5vw;
+}
 /* setting link buttons with in the footer */
 .buttons .social{
     display:flex;
@@ -182,17 +198,18 @@ body{
 
 .buttons .social i:hover{
     transition: all 0.4s ease-in-out;
-    background-color:var(--hover-color);
- background-color:red!important; 
+    background-color:green;
     color:#4f378a;
     cursor:pointer;
     border-radius:50%;
 
 }
 
+
+
 .buttons .link{
     text-decoration: none;
-    color:var(--prime-color);
+    color:green;
     background:white;
     padding:7px 10px;
     border-radius: 20px;
