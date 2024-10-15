@@ -4,58 +4,79 @@
 }
 
 #selftype{
-    /* position:absolute;
-    top:1vh;
-    right:vw; */
+
     border-style: dashed;
+    border-color: green;
     width:30vw;
+    height:15vh;
 }
    
 #head{
+    line-height: 2.5vh;
+   
     position:absolute;
     height:15vh;
-    width:20vw;
-    line-height: 3vh;
-    border-style: dashed; 
-    border-color: yellow;
+    width:30vw;
+    display:flex;
+    flex-direction: row;
+    /* border-color: red;
+    border-style: dashed;  */
+
+
+}
+
+#head p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
 .cursor{
     margin-left: 0;
     width:1px;
-    font-size:calc(2.5vw+1vh);
+    font-size:calc((4.5vw + 1vh)/2.5);
     display:inline;
     color:purple;  
 }
 
 #typed{
-    position:absolute;
-    left:5.5vw;
-    top: -2vh;
-    margin-left:1vw;
-    width:20vw;
+    margin-top: 0;
+    /* position:absolute;
+    left:0vw;
+    top: ovh; */
+    /* margin-left:1vw; */
+    width:22vw;
+    height:15vh;
+    /* border-style: dashed;
+    border-color: orange; */
 }
 .typed{
+    margin-top: 0;
+    font-weight: 900;
 
     margin-right:0;
     color:purple;
-    max-width:10vw;
+    max-width:22vw;
     height:15vh;
-    font-size: calc(2.5vw+1vh);
-    
-    border-style: dashed;
+    font-size: calc((4.5vw + 1vh)/2.5);
+    /* border-style: dashed;
+    border-color: blue; */
 
 }
 
 #start{
-    position: absolute;
+    margin-top: 0;
+    font-weight: 900;
+
+    /* position: absolute; */
     height: 15vh;
-    width: 9vw;
-    font-size: calc(2.5vw+1vh);
-     border-style: dashed; 
+    width: fit-content;
+    /* text-align: end; */
+    font-size: calc((4.5vw + 1vh)/2.5);
     display:inline-block;
     color:orange;
+    /* border-style: dashed;  */
+
 
 }
 

@@ -1,15 +1,44 @@
-#panechange1{
+
+  #rightshow{
+    z-index:10;
+    position:fixed;
+    right:0;
+    top:17vh;
+    height:63vh;
     border-radius: 50px 0px 0px 50px;
     width:3vw;
     font-size:2vw;
-    background-color: rgba(1,1,1,0.5);
-    color:white;
-  
-  }
-  #panechange2{
-    border-radius: 0px 50px 50px 0px;
-    width:3vw;
-    font-size:2vw;
-    background-color: rgba(1,1,1,0.5);
+    text-transform: rotate(90);
+    background-color: rgba(68, 12, 209, 0.5);
     color:white;
   }
+
+  #rightshow span{
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: 1vw;
+  }
+
+.buttons{
+    width:10vw;
+    height:2vh;
+    border-radius: 1vh;
+    /* margin:auto; */
+    margin-top:0.5vh;
+    /* display:block; */
+    color:white;
+    background-color: darkgray;
+}
+ 
+#go{
+  width:4vw;
+    height:2vh;
+    border-radius: 0.01vh;
+    /* margin:auto; */
+    margin-top:0.5vh;
+    /* display:block; */
+    color:white;
+    background-color: darkgray;
+}
+
+ 

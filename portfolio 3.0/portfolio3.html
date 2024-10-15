@@ -8,6 +8,8 @@
   <link href = './css/selftype.css' rel = 'stylesheet'>
   <link href = './css/main.css' rel = 'stylesheet'>
   <link href = './css/projectgrid.css' rel = 'stylesheet'>
+  <link href = './css/buttons.css' rel = 'stylesheet'>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -25,6 +27,9 @@
 <!-- left side  -->
 <div id = "main">
     <div id = "header">
+        
+        <div id = "headerpad"></div>
+
         <div id = "titlesouter">
             <div id = "titlesinner">
                 <h2>Nick Griffiths</h2>
@@ -33,30 +38,30 @@
         </div>
 
             <!-- Self typed section -->
-    <div id = 'selftype'>
-        <div id = 'head' class = 'selftype' data-text = '{"messages":["a developer","an educator","a data scientist","...check it out"]}'>
-            <span id = 'start'>I am </span>
-            <p id = 'typed'> <span class = 'typed'></span> <span id = 'cursor' class = 'hidden cursor hidden'>|</span>
-            </p> 
+        <div id = 'selftype'>
+            <div id = 'head' class = 'selftype' data-text = '{"messages":["a developer","an educator","a data scientist","...check it out"]}'>
+                <p id = 'start'><span>I am&nbsp;</span></p>
+                <p id = 'typed'> <span class = 'typed'></span> <span id = 'cursor' class = 'hidden cursor hidden'>|</span>
+                </p> 
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>
     
 
 
     <!-- central content area -->
     <div id = "center">
 
-        <div id = 'searchs'>
+        <div id = 'searches'>
             <div id = "searchbar">
                 <input id="usersearch" placeholder="search using key words e.g python"><button id = "go">go</button>
             </div>
             <div id = "quicksearch">
-                <button class = 'suggested'>Python</button>
-                <button class = 'suggested'>JavaScript</button>
-                <button class = 'suggested'>PowerBI</button>
-                <button class = 'suggested'>Machine learning</button>
+                <button class = 'buttons'>Python</button>
+                <button class = 'buttons'>JavaScript</button>
+                <button class = 'buttons'>PowerBI</button>
+                <button class = 'buttons'>ML</button>
             </div>
         </div>
 
@@ -133,7 +138,7 @@
     </div>
 </div>
 
-
+<button id = "rightshow"><span>open bio</span></button>
 </body>
 
 

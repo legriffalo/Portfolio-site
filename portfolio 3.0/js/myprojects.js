@@ -12,7 +12,8 @@ const data = `{
                 "Once scraped the data was built in to a database to form a backend for subsequent projects"],
     "tags":["Python","data","scraping","datamining"],
     "link":{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
-    "general":["data"]
+    "general":["data"],
+    "otherlinks":[]
     },
 
 "2":{
@@ -25,7 +26,9 @@ const data = `{
                  "To enable updates to the database to be safe from SQL injection I used a flask server as a go between." ],
     "tags":["html","javaScript","css","api","web","front-end","SQL","python","flask","back-end"],
     "link":{"source":"","type":"web"},
-    "general":["data","coding","web"]
+    "general":["data","coding","web"],
+    "otherlinks":[]
+
     },
 
 "3":{

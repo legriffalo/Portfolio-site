@@ -1,15 +1,21 @@
 .row{
-  height:25vh;
+  height:30vh;
   width:100%;
   overflow:hidden;
   display: flex;
   flex-direction: row;
-  align-items:center;
-  gap: 3vw;
+  /* align-items:center; */
+  justify-content: center;
+  gap: 1vw;
   margin-bottom: 2vh;
   border-style:dashed ;
-  color:green;
+  /* color:green; */
+}
 
+.row:last-child{
+  /* background-color: red; */
+  justify-content: start;
+  gap: 1vw;
 }
 
 img {
@@ -17,12 +23,10 @@ img {
   height: 100%;
   display: block;
 }
-
-
 .card {
   font-size:1.2vw;
   min-width: 30px;
-  max-width:27vw;
+  max-width:400px;
   height: 100%;
   border-radius: 30px;
   overflow: hidden;
@@ -31,12 +35,18 @@ img {
   flex-grow: 1;
   cursor: pointer;
   position: relative;
-  transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: cubic-bezier(0.16, 1, 0.3, 1);
   --transition-timing: 0.35s;
+}
+.card .topline{
+height:2vh;
+border-style: dashed;
+display:flex;
+flex-direction: row;
+align-items: center;
 }
 
 .card p{
-  
   width:0;
   height:0;
   overflow:hidden;
@@ -65,27 +75,22 @@ img {
   transition: var(--transition-timing) ease;
 }
 
-
-
 .card:hover > .background {
   filter: brightness(1);
 }
 
-.card > .card-content > h3{
+/* .card > .card-content > h3{
   margin-top: 0;
   color:pink;
-}
+} */
 
-.card:hover .topline{
-  height:4vh;
+.card:hover .cardfront .topline{
+  height:2vh;
   border-style: dashed;
   display:flex;
   flex-direction: row;
+  align-items: center;
 }
-
-
-
-
 
 .card > .card-content {
   display: flex;
@@ -93,10 +98,8 @@ img {
   align-items: center;
   flex-wrap: wrap;
   position: absolute; 
-  /* top: 12vh;
-  right:6vw; */
-  /* bottom:0; */
-  height:6vh;
+  left:1vw;
+  height:8vh;
   min-width:30vh;
   /* overflow: hidden; */
   transition: var(--transition-timing);
@@ -156,12 +159,35 @@ img {
   color:rgb(110, 252, 205);
 }
 
-.card > .backdrop {
+.cardback{
+  background-color: aliceblue;
+  height:100%;
+  width:100%;
+  padding:15px;
+}
+
+.cardback p{
+  all:initial;
+  /* background-color: aliceblue;
+  height:100%;
+  width:100%;
+  padding:15px; */
+}
+
+/* .card:hover .card-content .cardback{
+  background-color: aliceblue;
+  height:100%;
+  padding:15px;
+} */
+
+/* .card > .backdrop {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100px;
-  z-index: 0;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
-} 
+  height: 100%;
+  width:100%;
+  z-index: 4;
+  background-color: red;
+  background: linear-gradient(linear-gradient(to left top, blue, red));
+}  */
