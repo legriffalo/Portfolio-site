@@ -18,14 +18,14 @@ function typeWriter(id,i,j){
         i++;  
     }
     else if(j < messages.length-1){
-        typed.innerHTML += '<br>';
+        setTimeout(()=>{typed.innerHTML  += '<br>';},800);
         i = 0;
-        speed = 1000;
+        speed = 1600;
         j++
     }
     else{
-        setTimeout(()=>{typed.innerHTML ='';},1100);
-        setTimeout(()=>{document.getElementById('typed').classList.remove('highlighted');},1100);
+        setTimeout(()=>{typed.innerHTML ='';},1300);
+        setTimeout(()=>{document.getElementById('typed').classList.remove('highlighted');},1300);
 
         document.getElementById('typed').classList.add('highlighted');
         i = 0;

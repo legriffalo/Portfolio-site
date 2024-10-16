@@ -15,7 +15,7 @@ function builtProjectBoard(){
   // number of panels required
   let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
-  let rows = Math.floor(vw/550);
+  let rows = Math.floor(vw/450);
   console.log("row width is ", rows);
 
   //filter out work in progress projects

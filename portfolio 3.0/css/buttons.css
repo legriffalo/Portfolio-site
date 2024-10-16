@@ -2,10 +2,10 @@
   #rightshow{
     z-index:2;
     position:fixed;
-    right:0;
+    right:0vw;
     top:27vh;
     height:35vh;
-    border-radius: 2vh 0 0 2vh;
+    border-radius: 3vh 0 0 3vh;
     width:3vw;
     font-size:2vw;
     text-transform: rotate(90);
@@ -23,7 +23,7 @@
 
   #righthide{
     height:100%;
-    border-radius: 2vh 0 0 2vh;
+    border-radius: 3vh 0 0 3vh;
     width:3vw;
     font-size:2vw;
     text-transform: rotate(90);

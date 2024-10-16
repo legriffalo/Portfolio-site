@@ -1,18 +1,19 @@
 
 #selftype .highlighted {
     background-color:orange ;
+
 }
 
 #selftype{
-
-    border-style: dashed;
-    border-color: green;
-    width:30vw;
+    min-width: 24vw;
+    width:fit-content;
     height:15vh;
-}
+    /* border-style: dashed;
+    border-color: green; */
+} 
    
 #head{
-    line-height: 2.5vh;
+    line-height: 2vh;
    
     position:absolute;
     height:15vh;
@@ -25,30 +26,32 @@
 
 }
 
-#head p {
-    margin-top: 0;
+#selftype p {
+    margin-top: 0.5vh;
     margin-bottom: 0;
 }
 
+#selftype p  span{
+    margin-top: 0vh;
+    margin-bottom: 0;
+}
 
 .cursor{
     margin-left: 0;
     width:1px;
-    font-size:calc((4.5vw + 1vh)/2.5);
+    font-size:calc((5vw + 1vh)/3.5);
+    font-weight: 800;
     display:inline;
     color:purple;  
 }
 
 #typed{
-    margin-top: 0;
-    /* position:absolute;
-    left:0vw;
-    top: ovh; */
-    /* margin-left:1vw; */
-    width:22vw;
+    margin-top: 0vh;
+   
+    width:18vw;
     height:15vh;
-    /* border-style: dashed;
-    border-color: orange; */
+    border-style: dashed;
+    border-color: orange;
 }
 .typed{
     margin-top: 0;
@@ -56,9 +59,9 @@
 
     margin-right:0;
     color:purple;
-    max-width:22vw;
+    max-width:20vw;
     height:15vh;
-    font-size: calc((4.5vw + 1vh)/2.5);
+    font-size: calc((5vw + 1vh)/3.5);
     /* border-style: dashed;
     border-color: blue; */
 
@@ -72,10 +75,10 @@
     height: 15vh;
     width: fit-content;
     /* text-align: end; */
-    font-size: calc((4.5vw + 1vh)/2.5);
+    font-size: calc((5vw + 1vh)/3.5);
     display:inline-block;
     color:orange;
-    /* border-style: dashed;  */
+    border-style: dashed; 
 
 
 }
