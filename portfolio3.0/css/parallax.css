@@ -1,6 +1,6 @@
-body {
+#center {
     /* The image used */
-    background-image: url("../assets/backgrounds/test3.jpg");
+    background-image: url("../assets/backgrounds/test2.jpg");
   
     /* Set a specific height */
     width:100vw;

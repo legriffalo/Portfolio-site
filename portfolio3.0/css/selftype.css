@@ -25,8 +25,8 @@
     width:fit-content;
     display:flex;
     flex-direction: row;
-    border-color: red;
-    border-style: dashed; 
+    /* border-color: red;
+    border-style: dashed;  */
 }
 
 .cursor{

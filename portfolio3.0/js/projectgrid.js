@@ -108,27 +108,25 @@ function addListeners(){
     });
   });
 
-    els = [...document.getElementsByClassName("card")]
-    console.log("adding mouse out listeners",els)
-    els.forEach((el)=>{
-      back = el.querySelector(".cardback");
+    // els = [...document.getElementsByClassName("card")]
+    // console.log("adding mouse out listeners",els)
+    // els.forEach((el)=>{
+    //   back = el.querySelector(".cardback");
 
-      back.addEventListener("mouseout",(e)=>{
-        console.log("triggered a mouse out")
-        setTimeout(()=>{
-          console.log("timer complete")
-          el.getElementsByClassName("card-content")[0].classList.toggle("hidden");
-          el.getElementsByClassName("background")[0].classList.toggle("hidden");
-          el.getElementsByClassName("cardback")[0].classList.toggle("hidden");
-        },900);
+    //   back.addEventListener("mouseout",(e)=>{
+    //     console.log("triggered a mouse out")
+    //     setTimeout(()=>{
+    //       console.log("timer complete")
+    //       el.getElementsByClassName("card-content")[0].classList.toggle("hidden");
+    //       el.getElementsByClassName("background")[0].classList.toggle("hidden");
+    //       el.getElementsByClassName("cardback")[0].classList.toggle("hidden");
+    //     },900);
 
-      });
+    //   });
 
 
-    });
+    // });
   
-  
-
 
   }
 
