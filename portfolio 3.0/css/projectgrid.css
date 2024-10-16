@@ -175,6 +175,7 @@ align-items: center;
 }
 
 .cardback{
+  cursor:crosshair;
   background-color: aliceblue;
   height:100%;
   width:100%;

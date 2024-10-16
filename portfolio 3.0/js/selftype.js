@@ -18,7 +18,7 @@ function typeWriter(id,i,j){
         i++;  
     }
     else if(j < messages.length-1){
-        setTimeout(()=>{typed.innerHTML  += '<br>';},800);
+        typed.innerHTML  += '<br>';
         i = 0;
         speed = 1600;
         j++
@@ -36,5 +36,5 @@ function typeWriter(id,i,j){
     setTimeout(()=>{typeWriter(id,i,j)}, speed);
 }
 
-typeWriter('head',0,0);
+typeWriter('sthead',0,0);
 

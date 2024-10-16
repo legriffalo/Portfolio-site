@@ -4,12 +4,14 @@
   <title>Nick Griffiths Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href = './css/main.css' rel = 'stylesheet'>
 
   <link href = './css/parallax.css' rel = 'stylesheet'>
   <link href = './css/selftype.css' rel = 'stylesheet'>
-  <link href = './css/main.css' rel = 'stylesheet'>
   <link href = './css/projectgrid.css' rel = 'stylesheet'>
   <link href = './css/buttons.css' rel = 'stylesheet'>
+  <link href = './css/mediaqueries.css' rel = 'stylesheet'>
+
 
 
 
@@ -41,7 +43,7 @@
 
             <!-- Self typed section -->
         <div id = 'selftype'>
-            <div id = 'head' class = 'selftype' data-text = '{"messages":["a developer","an educator","a data scientist","...check it out"]}'>
+            <div id = 'sthead' class = 'selftype' data-text = '{"messages":["a Developer","an Educator","a Data scientist","...check it out"]}'>
                 <p id = 'start'><span>I am&nbsp;</span></p>
                 <p id = 'typed'> <span class = 'typed'></span> <span id = 'cursor' class = 'hidden cursor hidden'>|</span>
                 </p> 
@@ -61,11 +63,12 @@
             </div> -->
             
             <div id = "quicksearch">
-                <span><b>Filter:</b> </span>
-                <button class = 'searchbuttons'>Python</button>
-                <button class = 'searchbuttons'>JavaScript</button>
-                <button class = 'searchbuttons'>PowerBI</button>
-                <button class = 'searchbuttons'>ML</button>
+                <div class = 'searchbuttons'>Web</div>
+                <div class = 'searchbuttons'>Data Analysis</div>
+                <div class = 'searchbuttons'>Data Science</div>
+                <div class = 'searchbuttons'>JS</div>
+                <div class = 'searchbuttons'>Python</div>
+
             </div>
         </div>
 
@@ -86,9 +89,6 @@
 
         <div id = "projectgrid" class = "parallax">
 
-
-
-
         </div>
         
     </div>
@@ -97,67 +97,71 @@
 
 
 
-<!-- right side panel -->
-<div id = "right" class = "hidden">
+    <!-- right side panel -->
+    <div id = "right" class = "hidden">
 
-    <div id = "hidebutton">
-        <button id = "righthide"><span>hide</span></button>
-
-    </div>
-    
-    <!-- profile section -->
-    <div id = "profile" >
-
-        
-        <div id = 'pic' class = 'profile-pic'>
-            <img src = './assets/profile.png'>
-          </div>
-
-
-        <p class = 'tag'><b> Developer | Educator | Data scientist</b></p>
-        <p class = 'about'>
-          I am passionate about Strategic thinking and 
-          solving problems, especially when it impacts 
-          the experience of others. Improving existing 
-          systems and creating new ones give me a 
-          real buzz. </br></br>
-          
-          I love building stuff, be it fun little bits of 
-          software/webpages for family/friends, or large 
-          scale projects for colleagues and companies.
-          In particular I love the satisfaction of building 
-          solutions that save colleagues and businesses 
-          time, effort and money.
-          
-        </p>
-    
-    <a href = "https://drive.google.com/file/d/1OKHuXSSh7AFT1QP93xFD0T9XO-o4gGfS/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
-
-
-
-    </div>
-
-
-
-
-</div>
-   
-
-<!-- footer -->
-<div id = "footer">
-    <div class = 'buttons'>
-        <div class = 'social'>
-            <a href = '' ><i class="fa-brands fa-instagram"></i> </a>
-            <a href = '' ><i class="fa-brands fa-github"></i> </a>
-            <a href = '' ><i class="fa-brands fa-linkedin-in"></i> </a>
-            <a href = "https://drive.google.com/file/d/1OKHuXSSh7AFT1QP93xFD0T9XO-o4gGfS/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+        <div id = "hidebutton">
+            <button id = "righthide"><span>hide</span></button>
 
         </div>
-        <!-- <span id = 'see_projects' href = '#' class = 'link'>Explore my Projects
-            <i class = 'far fa-eye'></i>  
-        </span> -->
-    </div>
-</div>
+        
+        <!-- profile section -->
+        <div id = "profile" >
 
-<button id = "rightshow"><span>Bio</span></button>
+            
+            <div id = 'pic' class = 'profile-pic'>
+                <img src = './assets/profile.png'>
+            </div>
+
+
+            <p class = 'tag'><b> Developer | Educator | Data scientist</b></p>
+            <p class = 'about'>
+            I am passionate about Strategic thinking and 
+            solving problems, especially when it impacts 
+            the experience of others. Improving existing 
+            systems and creating new ones give me a 
+            real buzz. </br></br>
+            
+            I love building stuff, be it fun little bits of 
+            software/webpages for family/friends, or large 
+            scale projects for colleagues and companies.
+            In particular I love the satisfaction of building 
+            solutions that save colleagues and businesses 
+            time, effort and money.
+            
+            </p>
+        
+        <a href = "https://drive.google.com/file/d/1OKHuXSSh7AFT1QP93xFD0T9XO-o4gGfS/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+
+
+
+        </div>
+
+
+
+
+    </div>
+    
+
+    <!-- footer -->
+    <div id = "footer">
+        <div class = 'buttons'>
+            <div class = 'social'>
+                <a href = '' ><i class="fa-brands fa-instagram"></i> </a>
+                <a href = '' ><i class="fa-brands fa-github"></i> </a>
+                <a href = '' ><i class="fa-brands fa-linkedin-in"></i> </a>
+                <a href = "https://drive.google.com/file/d/1OKHuXSSh7AFT1QP93xFD0T9XO-o4gGfS/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+
+            </div>
+            <!-- <span id = 'see_projects' href = '#' class = 'link'>Explore my Projects
+                <i class = 'far fa-eye'></i>  
+            </span> -->
+        </div>
+    </div>
+
+    <button id = "rightshow"><span>Bio</span></button>
+
+
+
+
 </body>

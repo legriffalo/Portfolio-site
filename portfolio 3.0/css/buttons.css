@@ -37,16 +37,7 @@
     font-size: 1vw;
   }
 
-.searchbuttons{
-    width:10vw;
-    height:2.4vh;
-    border-radius: 1vh;
-    /* margin:auto; */
-    margin-top:0.5vh;
-    /* display:block; */
-    color:white;
-    background-color: darkgray;
-}
+
  
 #go{
   width:4vw;

@@ -15,4 +15,5 @@ hideBio.addEventListener("pointerdown",(e)=>{
 window.onresize = (e)=>{
     clearGrid()
     builtProjectBoard()
+    addListeners()
 }

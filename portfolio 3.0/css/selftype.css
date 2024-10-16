@@ -1,93 +1,80 @@
 
+
 #selftype .highlighted {
     background-color:orange ;
-
 }
 
 #selftype{
-    min-width: 24vw;
+
+    min-width: 30vh;
     width:fit-content;
-    height:15vh;
+    height:100%;
     /* border-style: dashed;
     border-color: green; */
 } 
    
-#head{
-    line-height: 2vh;
-   
-    position:absolute;
-    height:15vh;
-    width:30vw;
+
+
+
+
+#sthead{
+    margin-top: 0.2vh;
+    line-height: 3vh;
+    font-size: 3vh;
+    height:100%;
+    width:fit-content;
     display:flex;
     flex-direction: row;
-    /* border-color: red;
-    border-style: dashed;  */
-
-
-}
-
-#selftype p {
-    margin-top: 0.5vh;
-    margin-bottom: 0;
-}
-
-#selftype p  span{
-    margin-top: 0vh;
-    margin-bottom: 0;
+    border-color: red;
+    border-style: dashed; 
 }
 
 .cursor{
     margin-left: 0;
-    width:1px;
-    font-size:calc((5vw + 1vh)/3.5);
-    font-weight: 800;
+    margin-top: 0;
+    width:2px;
+    font-weight: 900;
     display:inline;
     color:purple;  
 }
 
 #typed{
     margin-top: 0vh;
-   
-    width:18vw;
-    height:15vh;
-    border-style: dashed;
-    border-color: orange;
+    width:fit-content;
+    height:fit-content;
+    /* border-style: dashed;
+    border-color: orange; */
 }
 .typed{
-    margin-top: 0;
     font-weight: 900;
-
-    margin-right:0;
+    display:inline;
     color:purple;
     max-width:20vw;
-    height:15vh;
-    font-size: calc((5vw + 1vh)/3.5);
+    /* height:fit-content; */
     /* border-style: dashed;
     border-color: blue; */
+    border-width:0;
 
 }
 
 #start{
-    margin-top: 0;
+    margin-top: 0vh;
     font-weight: 900;
-
-    /* position: absolute; */
-    height: 15vh;
+    height: 100%;
     width: fit-content;
-    /* text-align: end; */
-    font-size: calc((5vw + 1vh)/3.5);
-    display:inline-block;
     color:orange;
-    border-style: dashed; 
+    /* border-style: dashed;  */
+}
 
-
+#start span{
+    margin-top: 0;
 }
 
 .hidden{
     opacity:0;
 }
 
-*{ 
+/* *{ 
     box-sizing: border-box;
     font-family:"poppins"-sans-serif;
-} 
+}  */
