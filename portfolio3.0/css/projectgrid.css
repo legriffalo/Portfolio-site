@@ -48,6 +48,7 @@ img {
   --transition-timing: 0.35s;
 }
 
+
 .card .topline{
 height:2vh;
 /* border-style: dashed; */
@@ -61,16 +62,16 @@ align-items: center;
   height:2.5vh;
 }
 
-.card p{
+.cardfront p{
   margin-left: 1.1vw;
   width:0;
   height:0;
   overflow:hidden;
 }
 
-.card:hover p{
+.card:hover .cardfront p{
   margin-top: 0;
-  font-size: 0.6em;
+  font-size: 1em;
   height:2.5vh;
   width:100%;
 }
@@ -158,11 +159,6 @@ align-items: center;
   stroke: rgb(110, 252, 205);
 }
 
-
-/* .profile-image > svg {
-  stroke: #fefefe;
-} */
-
 .card-content > .title {
   white-space: pre;
   margin-left: 1%;
@@ -180,15 +176,22 @@ align-items: center;
   background-color: aliceblue;
   height:100%;
   width:100%;
-  padding:15px;
+  padding:0;
 }
 
-.cardback p{
-  all:initial;
-  /* background-color: aliceblue;
+.cardback .info{
+  /* height:100%;
+  width:100%; */
+  color:black;
+  /* font-size: large; */
+  margin: 2vh 2vh 2vh 2vh;
+}
+
+.card p.infoparagraph{
   height:100%;
   width:100%;
-  padding:15px; */
+  font-size: medium;
+display:inline-block;
 }
 
 /* .card:hover .card-content .cardback{

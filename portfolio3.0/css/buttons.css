@@ -1,6 +1,6 @@
 #searches{
   z-index:5;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.1);
   position:fixed;
   top:19vh;
   left: 10vw;
@@ -51,7 +51,7 @@
 
 #quicksearch .selected{
   /* background-color: rgba(68, 12, 209, 1); */
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(100,10,50,0.8);
 
 }
 
