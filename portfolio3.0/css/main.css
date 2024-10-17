@@ -114,9 +114,10 @@ body{
 .commentarypanel{
     background-color: rgba(10,10,10,0.95);
     color: white;
-    height:10vh;
+    height:5vh;
     /* width:100vw; */
     padding:5vh;
+    margin-bottom: 5vh;
     
 }
 
@@ -230,22 +231,50 @@ body{
 } 
 
 .buttons{
-    margin-left:5vw;
+    margin-left:5vh;
 }
 /* setting link buttons with in the footer */
 .buttons .social{
     display:flex;
-    gap:15px;
+    /* gap:15px; */
+    gap:1vw;
+}
+
+.buttons .social a:link{
+    text-decoration:none;
+}
+
+.buttons .social a:visited{
+    text-decoration:none;
+
 }
 
 .buttons .social i{
+    font-size:3vh;
     color:white;
     cursor:pointer;
+
 }
 
-.buttons .social i:hover{
-    transition: all 0.4s ease-in-out;
+/* .buttons .alt{
+    height:4vh;
+    filter: red; 
+}
+
+.buttons .alt:hover{
+    
+    cursor:pointer;
     background-color:green;
+    border-radius:50%;
+
+
+} */
+
+
+.buttons .social i:hover{
+    /* font-size:3vh; */
+    transition: all 0.4s ease-in-out;
+    background-color:purple;
     color:#4f378a;
     cursor:pointer;
     border-radius:50%;
