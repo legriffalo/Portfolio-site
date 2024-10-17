@@ -71,68 +71,82 @@ const data = `{
     "otherlinks":[]
     },
 
-
-
-
 "5":{
     "show":"1",
-    "inprogress":1,
+    "inprogress":0,
 
-    "name":"",
-    "coverimage":"./assets/image.png",
-    "description":"The intial scraping phase of a larger project",
-    "specifics":["I needed a database of Finnish words on which to base later learning projects.",
-                "To do this I used beautiful soup to crawl finnish grammar websites",
-                "Once scraped the data was built in to a database to form a backend for subsequent projects"],
-    "tags":["Python","data","scraping","datamining"],
-    "link":{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
+    "name":"Image storage",
+    "coverimage":"./assets/projects/imagestorage.png",
+    "description":"Webpage to facilitate collecting image for CNN image recognition projects",
+    "specifics": ["To provide data sets for image recognition I built a site to collect handwritten data",
+                 "This site collects hand written numbers and sends them to SQL database via fetch API",
+                 "To enable updates to the database to be safe from SQL injection I used a flask server as a go between." ],
+    "tags":["Web","APIs","back-end","SQL","Python","Flask","Data"],
+    "link":{"source":"","type":"web"},
     "general":["data"],
+
     "otherlinks":[]
+
     },
 
 "6":{
     "show":"1",
     "inprogress":1,
 
-    "name":"Image storage",
-    "coverimage":"./assets/image.png",
-    "description":"Webpage to facilitate collecting image for CNN image recognition projects",
-    "specifics": ["To provide data sets for image recognition I built a site to collect handwritten data",
-                 "This site collects hand written numbers and sends them to SQL database via fetch API",
-                 "To enable updates to the database to be safe from SQL injection I used a flask server as a go between." ],
-    "tags":["html","javaScript","css","api","web","front-end","SQL","python","flask","back-end"],
-    "link":{"source":"","type":"web"},
-    "general":["data","coding","web"],
+    "name":"Nordic keyboard converter",
+    "coverimage":"./assets/projects/Nordic.png",
+    "description":"Python application to add unicode access hotkey to Windows",
+    "specifics": ["",
+                  "",
+                  "",
+                  "",
+                  ""],
+    "tags":["Python","App"],
+    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"},
+    "general":["data"],
+
     "otherlinks":[]
 
-    },
+},
+
 
 "7":{
     "show":"1",
     "inprogress":1,
 
-    "name":"Molkky madness app",
-    "coverimage":"./assets/molkky.png",
-    "description":"A scoring and custom rule making app for web/mobile",
-    "specifics": ["This was built using javaScript, html, css in the first instance to make a webpage to test the useability",
-                  "Then using githubpages and reacte native webview I published it as a mobile app."],
-    "tags":["html","javaScript","css","react-native","googlePlay", "app","web","front-end"],
-    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}
-},
+    "name":"Python data course",
+    "coverimage":"./assets/projects/pythoncourse.png",
+    "description":"I am writing a Python DS course",
+    "specifics": ["The drafting and planning of the course has taken some time",
+                  "I produced numerous machine learning models, breaking down the build process in to easy to follow flow charts for students",
+                  "The course is currently in a rough draft stage with only 3 initial sessions ready for deployment",
+                  "There will be more to follow..."],
+    "tags":["Data","ML","Visualisation","Analysis","Python"],
+    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"},
 
+    "general":["data"],
+
+    "otherlinks":[]
+},
 
 "8":{
     "show":"1",
     "inprogress":1,
 
-    "name":"Molkky madness app",
-    "coverimage":"./assets/molkky.png",
-    "description":"A scoring and custom rule making app for web/mobile",
-    "specifics": ["This was built using javaScript, html, css in the first instance to make a webpage to test the useability",
-                  "Then using githubpages and reacte native webview I published it as a mobile app."],
-    "tags":["html","javaScript","css","react-native","googlePlay", "app","web","front-end"],
-    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}
+    "name":"Mölkky madness app",
+    "coverimage":"./assets/projects/molkky.png",
+    "description":"A scoring and custom rule making app for Mölkky on web/mobile",
+    "specifics": ["During group trips away we always bring our Mölkky set, sometimes we like to mix up the rules and add challenges, managing these on paper was tedious so I built a better way",
+                  "Mölkky Madness was built using javaScript, html, css in the first instance to make a webpage to test the useability",
+                  "The next stage is to embed the GH-pages version in React-Native to produce an Android application"],
+    "tags":["Web","JavaScript","front-end"],
+    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"},
+
+    "general":["Web","App"],
+
+    "otherlinks":[]
 }
+
 
 
 

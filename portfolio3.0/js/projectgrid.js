@@ -1,7 +1,14 @@
-// get all project data from the file 
-projects = JSON.parse(data)
-console.log(projects);
-
+function filterCheck(a, b){
+  console.log(a)
+  console.log(b)
+  let success = 0;
+  a.forEach((val) => { 
+    b.includes(val)? success = 1 : null;
+    console.log(success , val)
+  });
+  console.log(success)
+  return success
+}
 
 
 
@@ -9,9 +16,49 @@ function clearGrid(){
   document.getElementById('projectgrid').innerHTML = '';
 }
 
-function builtProjectBoard(){
+
+
+function builtProjectBoard(filters){
+    // get all project data from the file 
+    projects = JSON.parse(data);
+    // console.log(projects);
+    
+    
     //list of all projects used to grab each element for genration
     let projectsList = Object.keys(projects);
+
+    // filter out unwanted projects
+    if(filters && filters.length>0){
+      toRemove = [];
+      projectsList.forEach((projectNumber)=>{
+        console.log("the project being checked is ",projectNumber )
+        
+        
+        allTags = Array.from(projects[projectNumber].tags);
+        console.log("its tags are ", allTags)
+        console.log("Tags to match are ", filters)
+        let matches = 0;
+        // filterCheck(filters, allTags)?matches = 1:null;  
+        // console.log("did it match ", matches)
+        filterCheck(filters, allTags)?matches = 1:toRemove.push(projectNumber);  
+        // console.log(matches,projects, projectsList )
+        });
+
+        console.log("projects to remove are", toRemove)
+
+
+        toRemove.length>0? toRemove.forEach(el=>{
+          remover(projectsList,el)
+        }):null;
+    }
+
+
+
+
+    else{console.log("no filters showing all projects")}
+    
+
+
     // number of panels required
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
