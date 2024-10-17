@@ -38,4 +38,11 @@
         top:13.5vh;
 
     }
+
+    .card {
+        z-index: 3;
+        font-size:1.2vh;
+        min-width: 30px;
+        max-width:200px;
   }
+}

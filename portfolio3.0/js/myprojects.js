@@ -32,7 +32,7 @@ const data = `{
                 "I used my data base of finnish words and a Python script to create JSON flashcards sets.",
                 "These can be loaded into the vocab PWA to be used",
                 "A set of 5000 words will be hosted on a simple sit to make this process simpler"],
-    "tags":["Python","JS","UI","PWA","JSON", "Data","App"],
+    "tags":["Web","Python","JS","UI","PWA","JSON", "Data","App"],
     "link":{"source":"https://github.com/legriffalo-alt/flashcards","type":"github"},
     "general":["data"],
     "otherlinks":[{"source":"https://legriffalo-alt.github.io/flashcards/flashcards.html","type":"site"}]
@@ -81,7 +81,7 @@ const data = `{
     "specifics": ["To provide data sets for image recognition I built a site to collect handwritten data",
                  "This site collects hand written numbers and sends them to SQL database via fetch API",
                  "To enable updates to the database to be safe from SQL injection I used a flask server as a go between." ],
-    "tags":["Web","APIs","back-end","SQL","Python","Flask","Data"],
+    "tags":["Web","APIs","Backend","SQL","Python","Flask","Data"],
     "link":{"source":"","type":"web"},
     "general":["data"],
 

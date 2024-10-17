@@ -126,6 +126,8 @@ body{
 
 
 #projectgrid{
+    /* position:relative;
+    z-index: 10; */
     margin-top: 4vh;
     /* height:40vh; */
     /* border-style: dashed;
