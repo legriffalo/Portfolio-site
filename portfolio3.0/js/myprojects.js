@@ -13,10 +13,10 @@ const data = `{
                 "Using Manifest 3.0 and web languages I built an extension that allows media playback changes and has a useful speed reader"],
     "tags":["JS","Web","UI","API"],
     
-    "link":{"source":"https://github.com/legriffalo/speedmedia-chrome-extension","type":"github"},
+    "links":[{"source":"https://github.com/legriffalo/speedmedia-chrome-extension","type":"github"}],
 
-    "general":["data"],
-    "otherlinks":[]
+    "general":["data"]
+
     },
 
 
@@ -33,9 +33,10 @@ const data = `{
                 "These can be loaded into the vocab PWA to be used",
                 "A set of 5000 words will be hosted on a simple sit to make this process simpler"],
     "tags":["Web","Python","JS","UI","PWA","JSON", "Data","App"],
-    "link":{"source":"https://github.com/legriffalo-alt/flashcards","type":"github"},
-    "general":["data"],
-    "otherlinks":[{"source":"https://legriffalo-alt.github.io/flashcards/flashcards.html","type":"site"}]
+    "links":[{"source":"https://github.com/legriffalo-alt/flashcards","type":"github"},
+             {"source":"https://legriffalo-alt.github.io/flashcards/flashcards.html","type":"site","dim":"width=500,height=800"}],
+
+    "general":["data"]
     },
 
 "3":{
@@ -50,9 +51,12 @@ const data = `{
                 "I had previously struggled to appreciate 3rd party apps so I made my own",
                 "The app is a PWA using manifest that tracks quitting stats and keeps a smoking/quitting log in a calendar using calendar.js"],
     "tags":["JS","Data","JSON","Web","UI","App"],
-    "link":{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
-    "general":["data"],
-    "otherlinks":[{"source":"https://legriffalo.github.io/quitting-smoking/stopsmoking.html","type":"site"}]    },
+    "links":[{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
+             {"source":"https://legriffalo.github.io/quitting-smoking/stopsmoking.html","type":"site","dim":"width=500,height=800"}],
+
+    "general":["data"]
+
+    },
 
 
 "4":{
@@ -66,9 +70,9 @@ const data = `{
                 "To do this I used beautiful soup to crawl finnish grammar websites",
                 "Once scraped,my plan was to load the words into a database to form a backend for subsequent projects"],
     "tags":["Python","data","scraping","datamining"],
-    "link":{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
-    "general":["data"],
-    "otherlinks":[]
+    "links":[{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"}],
+
+    "general":["data"]
     },
 
 "5":{
@@ -82,10 +86,11 @@ const data = `{
                  "This site collects hand written numbers and sends them to SQL database via fetch API",
                  "To enable updates to the database to be safe from SQL injection I used a flask server as a go between." ],
     "tags":["Web","APIs","Backend","SQL","Python","Flask","Data"],
-    "link":{"source":"","type":"web"},
-    "general":["data"],
+    "links":[{"source":"","type":"web"}],
+    
+    
+    "general":["data"]
 
-    "otherlinks":[]
 
     },
 
@@ -102,10 +107,9 @@ const data = `{
                   "",
                   ""],
     "tags":["Python","App"],
-    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"},
-    "general":["data"],
+    "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
 
-    "otherlinks":[]
+    "general":["data"]
 
 },
 
@@ -122,11 +126,10 @@ const data = `{
                   "The course is currently in a rough draft stage with only 3 initial sessions ready for deployment",
                   "There will be more to follow..."],
     "tags":["Data","ML","Visualisation","Analysis","Python"],
-    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"},
+    "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
 
-    "general":["data"],
+    "general":["data"]
 
-    "otherlinks":[]
 },
 
 "8":{
@@ -140,11 +143,10 @@ const data = `{
                   "Mölkky Madness was built using javaScript, html, css in the first instance to make a webpage to test the useability",
                   "The next stage is to embed the GH-pages version in React-Native to produce an Android application"],
     "tags":["Web","JavaScript","front-end"],
-    "link":{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"},
+    "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
 
-    "general":["Web","App"],
+    "general":["Web","App"]
 
-    "otherlinks":[]
 }
 
 

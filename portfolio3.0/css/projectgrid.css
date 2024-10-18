@@ -63,7 +63,7 @@ align-items: center;
 }
 
 .cardfront p{
-  margin-left: 1.1vw;
+  /* margin-left: 1.1vw; */
   width:0;
   height:0;
   overflow:hidden;
@@ -86,19 +86,25 @@ align-items: center;
   inset: 0;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.4);
+  filter: brightness(0.35);
   z-index: -1;
   transition: var(--transition-timing) ease;
+}
+
+
+.card >.inprogress{
+  filter:opacity(0.9);
+  position: absolute;
+  width:25%;
+  height:25%;
+  right:0;
+  top:0;
+
 }
 
 .card:hover > .background {
   filter: brightness(1);
 }
-
-/* .card > .card-content > h3{
-  margin-top: 0;
-  color:pink;
-} */
 
 .card:hover .cardfront .topline{
   height:2vh;
@@ -137,23 +143,6 @@ align-items: center;
   transition: var(--transition-timing);
 }
 
-.card-content > .profile-image {
-  min-width: 2.5vw;
-  max-width: 2.5vw;
-  /* height: 3vw; */
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  overflow: hidden;
-  height:100%;
-}
-
-/* .card:hover .profile-image {
-  border: 1px solid rgb(110, 252, 205);
-} */
-
 .card:hover .profile-image > svg {
   margin-top: 0;
   stroke: rgb(110, 252, 205);
@@ -171,12 +160,14 @@ align-items: center;
   color:rgb(110, 252, 205);
 }
 
+
 .cardback{
-  cursor:crosshair;
+  cursor:pointer;
   background-color: aliceblue;
   height:100%;
   width:100%;
   padding:0;
+  overflow-y: scroll;
 }
 
 .cardback .info{
@@ -187,13 +178,26 @@ align-items: center;
   margin: 2vh 2vh 2vh 2vh;
 }
 
-.card p.infoparagraph{
+.cardback .infoparagraph{
   height:100%;
   width:100%;
-  font-size: medium;
+  font-size: 2vw;
 display:inline-block;
 }
 
+
+.cardbacklinks{
+  margin-top:0.2vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  gap:1vw;
+}
+.cardbacklinks i {
+  color:black;
+  font-size:1.5vw;
+  cursor:pointer;
+}
 /* .card:hover .card-content .cardback{
   background-color: aliceblue;
   height:100%;

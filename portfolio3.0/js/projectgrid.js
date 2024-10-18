@@ -52,13 +52,7 @@ function builtProjectBoard(filters){
         }):null;
     }
 
-
-
-
     else{console.log("no filters showing all projects")}
-    
-
-
     // number of panels required
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
@@ -79,34 +73,57 @@ function builtProjectBoard(filters){
       }
 
       if (projects[projectsList[i]].show == 1 ){
+        
+        currentProject = projects[projectsList[i]]
+        // get project summary
 
-        let infostring = '';
-        projects[projectsList[i]].specifics.forEach((el)=>{
-          infostring += el + '<br>';
+        let summaryString =currentProject.description;
+        // get details
+
+        let infoString = '';
+        currentProject.specifics.forEach((el)=>{
+          infoString += el + '<br>';
         });
 
-        // console.log(infostring)
+        //get project link data
+        infoLinks = ""
+        let ll =  currentProject.links;
+        ll.forEach((el)=>{
+          let icon
+          el.type == "github"? icon = 'fa-brands fa-github':null;
+          el.type == "site"? icon = 'fas fa-globe':null;
 
+          el.dim? dimensions = el.dim:dimensions = "width=600,height=600";
+          
+
+          infoLinks +=`<p><i data-name = "${currentProject.name}" data-dimensions = "${dimensions}" data-target = "${el.source}"    class = "backlink ${icon}"></i></p>`
+        })
+
+        // console.log(infoLinks)
+// <i class = "backlink ${icon}"></i>
+        // hammer for in progress indicator
+        //<i class="fas fa-hammer"></i>
+
+        currentProject.inprogress? ongoing = `<img class = "inprogress" src = "assets/backgrounds/inprogress.png">`:ongoing = null;
         document.getElementById(`row${Math.floor(i/rows)}`).innerHTML+= 
         
         `<div class="card">
-          <img class="background" src="${projects[projectsList[i]].coverimage}">
+          <img class="background" src="${currentProject.coverimage}">
+          ${ongoing}
+
           <div class="card-content">
           
           <div class = "cardfront">
             <div class = "topline">
-              <div class="profile-image">
-                <a href= "${projects[projectsList[i]].link.source}" target = "none"><i class = 'far fa-eye'></i></a>
-              </div>
 
-              <h3 class="title">${projects[projectsList[i]].name}</h3>
+              <h3 class="title">${currentProject.name}</h3>
             </div>
             
             <div class = 'break'>
             </div>
 
             <div class = "bottom">  
-              <p>${[... projects[projectsList[i]].tags]}</p>
+              <p>${[... currentProject.tags]}</p>
             </div>
           
             
@@ -117,9 +134,16 @@ function builtProjectBoard(filters){
         
         <div class = "cardback hidden">
             <div class = "info">
+              <h4>${summaryString}</h4>
+
+              <div class = "cardbacklinks">
+                ${infoLinks}
+              </div>
+
               <p class = "infoparagragh">
-                ${infostring}
+                ${infoString}
               </p>
+              
             </div>
 
           
@@ -142,6 +166,9 @@ function addListeners(){
 
     els.forEach((el)=>{
       el.addEventListener("pointerdown", (e)=>{
+
+        console.log(e.target.tagName, "was clicked")
+        if(e.target.tagName!='I' && e.target.tagName != 'A'){
         console.log("triggered a click")
 
       
@@ -150,32 +177,23 @@ function addListeners(){
         // e.target.getElementsByClassName("backdrop")[0].classList.toggle("hidden");
 
         el.getElementsByClassName("cardback")[0].classList.toggle("hidden");
-         
+        }
+        
+        else{
+          console.log("clicked link to other site")
+          try{
+            window.open(e.target.dataset.target, e.target.dataset.name , e.target.dataset.dimensions);
+          }
+          catch{
+            confirm(`looks like a popup blocker is stopping you from reaching ${e.target.dataset.target}`)
+          }
+
+        }
 
     });
   });
 
-    // els = [...document.getElementsByClassName("card")]
-    // console.log("adding mouse out listeners",els)
-    // els.forEach((el)=>{
-    //   back = el.querySelector(".cardback");
-
-    //   back.addEventListener("mouseout",(e)=>{
-    //     console.log("triggered a mouse out")
-    //     setTimeout(()=>{
-    //       console.log("timer complete")
-    //       el.getElementsByClassName("card-content")[0].classList.toggle("hidden");
-    //       el.getElementsByClassName("background")[0].classList.toggle("hidden");
-    //       el.getElementsByClassName("cardback")[0].classList.toggle("hidden");
-    //     },900);
-
-    //   });
-
-
-    // });
-  
-
-  }
+}
 
 
 
@@ -188,22 +206,3 @@ addListeners()
 
 
 
-// // start up with panel0 shown
-// let selected = 0;
-// document.getElementsByClassName('panel')[selected].classList.add('panelshown');
-
-
-
-// const cardsContainer = document.querySelector(".container");
-
-// cardsContainer.addEventListener("click", (e) => {
-//   const target = e.target.closest(".card");
-
-//   if (!target) return;
-
-//   cardsContainer.querySelectorAll(".card").forEach((card) => {
-//     card.classList.remove("active");
-//   });
-
-//   target.classList.add("active");
-// });

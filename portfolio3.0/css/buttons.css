@@ -1,6 +1,6 @@
 #searches{
   z-index:5;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.7);
   position:fixed;
   top:19vh;
   left: 10vw;
@@ -20,8 +20,7 @@
 }
 
 #quicksearch{
-  font-size: 1.6vh;
-  
+  font-size: 2vh;
   display:flex;
   flex-direction:row;
 }
@@ -45,72 +44,58 @@
   border-radius: 3vh 0 0 3vh ;
 }
 
-
-
-
-
 #quicksearch .selected{
   /* background-color: rgba(68, 12, 209, 1); */
   background-color: rgba(100,10,50,0.8);
 
 }
 
-
+/*Right hand side BIO buttons*/
 #rightshow{
   z-index:2;
   position:fixed;
   right:0vw;
-  top:27vh;
+  top:26vh;
   height:35vh;
   border-radius: 3vh 0 0 3vh;
   width:3vw;
-  font-size:2vw;
-  text-transform: rotate(90);
-  background-color: rgba(68, 12, 209, 0.85);
+  background-color: rgba(225,165,0,0.8);
+  /* color:rgb(220,220,220); */
   color:white;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
 
 #rightshow span{
   display: inline-block;
-  transform: rotate(-90deg);
-  font-size: 1vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  width:3vw;
+  height:20vh;
+  writing-mode:vertical-lr;
+  transform:scale(-1); 
 }
 
-#hidebutton{
-  
+#hidebutton{ 
   border-radius: 3vh 0 0 3vh;
-
 }
 
 #righthide{
   height:100%;
   border-radius: 3vh 0 0 3vh;
-  border-color:rgba(50,50,50,0.9);
-
+  background-color: rgba(225,165,0,0.8);
   width:3vw;
-  font-size:2vw;
-  text-transform: rotate(90);
-  background-color: rgba(68, 12, 209, 0.85)!important;
+  font-size:3vw;
   color:white;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#righthide span{
-  display: inline-block;
-  transform: rotate(-90deg);
-  font-size: 1vw;
+#righthide i{
+  font-size: 2vw;
+  line-height: 2vw;
 }
-
-
-
-/* #go{
-width:4vw;
-  height:2vh;
-  border-radius: 0.01vh;
-  /* margin:auto;
-  margin-top:0.5vh;
-  /* display:block; 
-  color:white;
-  background-color: darkgray;
-} */
-

@@ -18,6 +18,17 @@
     #searches{
         top:14vh;
     }
+
+    #right{
+        width:60vw;
+    }
+    #rightshow{
+        width:4vw;
+    }
+
+    #rightshow span{
+        font-size: 2.5vw;
+    }
   }
 
 
@@ -44,5 +55,18 @@
         font-size:1.2vh;
         min-width: 30px;
         max-width:200px;
-  }
+    }
+
+    #quicksearch{
+        font-size: 1.6vh;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #rightshow{
+        width:2.5vw;
+    }
+    #rightshow span{
+        font-size:1.3em;
+    }
 }
