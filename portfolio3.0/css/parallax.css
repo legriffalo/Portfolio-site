@@ -1,7 +1,6 @@
 #center {
     /* The image used */
     background-image: url("../assets/backgrounds/test2.jpg");
-    
     width:100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

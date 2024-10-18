@@ -89,6 +89,7 @@ body{
 }
 
 #center{
+    background-color: rgba(0,0,0,0);
     width:95vw;
     margin:auto;
     margin-top: 26vh;
