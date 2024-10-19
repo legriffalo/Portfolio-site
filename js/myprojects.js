@@ -13,7 +13,8 @@ const data = `{
                 "Using Manifest 3.0 and web languages I built an extension that allows media playback changes and has a useful speed reader"],
     "tags":["JS","Web","UI","API"],
     
-    "links":[{"source":"https://github.com/legriffalo/speedmedia-chrome-extension","type":"github"}],
+    "links":[{"source":"https://github.com/legriffalo/speedmedia-chrome-extension","type":"github"},
+             {"source":"https://chromewebstore.google.com/detail/speedia/koekfhjdagjpbacbgjcbjndmhlcbkcmb?hl=en-US&utm_source=ext_sidebar","type":"site","dim":"width=1200,height=800"}],
 
     "general":["data"]
 
