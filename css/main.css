@@ -1,0 +1,234 @@
+body{
+    background-color: black;
+    color:white;
+    /* overflow-x: hidden; */
+}
+/*Ensure hidden elements are unselectable*/
+.hidden{
+    display:none;
+    opacity:0;
+    height:0px !important;
+    width: 0px !important;
+    overflow: hidden;
+}
+/*Ensure hidden card elements are unselectable*/
+.card .card-content.hidden{
+    display:none;
+    opacity:0;
+    height:0px !important;
+    width: 0px !important;
+    overflow: hidden;
+}
+
+/* All content in the left hand panel */
+/*BASICALLY THE ENTIRE MAIN SITE*/
+#main{
+    box-sizing: border-box;
+    background-color: white;
+    width:100%;   
+}
+
+#header{
+    box-sizing: border-box;
+    position:fixed;
+    top: 3vh;
+    left:0vw;
+    z-index:5;
+    height:15vh;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    border-style:solid;
+    /* border-top:solid;
+    border-bottom: solid; */
+    gap:3vw;
+}
+
+#headerpad{   
+    width:30vh;
+    height:100%;
+}
+
+#titlesouter{
+    width:50vw;
+    border-left: solid;
+    border-right: solid;
+}
+
+#titlesinner{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titlesinner > h2{
+    margin-top: 1vh;
+    font-size: calc((6.5vw + 2vh)/2.5);
+    line-height: calc((6.5vw + 2vh)/2.5);
+
+    margin-bottom:0.1vh;
+}
+
+#titlesinner > h4{
+    margin-top: 0.1vh;
+    font-size: calc((3vw + 1vh)/2.5);
+    line-height: calc((3vw + 1vh)/2.5);
+
+    margin-bottom: 1vh;
+}
+
+.tag{
+    width:90%;
+    margin:auto;
+    text-align: center;
+}
+
+#center{
+    background-color: rgba(0,0,0,0);
+    width:95vw;
+    margin:auto;
+    margin-top: 26vh;
+}
+
+.commentarypanel{
+    background-color:rgba(80,10,50,0.8);
+    color: white;
+    height:8vh;
+    margin-bottom: 10vh;   
+}
+
+.commentarypanel:last-child{
+    margin-bottom: 0vh;
+}
+
+#usersearch{
+    width:50vw; 
+    font-size: 5vh;
+}
+
+
+#projectgrid{
+    margin-top: 4vh;
+    margin:auto;
+    min-height:40vh;
+
+}
+
+
+/* All content in the right hand panel */
+#right{
+    z-index:6;
+    position:fixed;
+    right:0vw;
+    top:26vh;
+    width:40vw;
+    height:71vh;
+    display:flex;
+    flex-direction: row;
+    border-radius: 3vh 0 0 3vh;
+}
+
+#profile{
+    width:98%;
+    padding:0.5vh;
+    background-color: rgba(50,50,50,0.9);
+    border-style:none;
+    display: block;
+}
+
+#profile .cv {
+    font-size: 4vw;
+    width:2vw;
+    /* margin-top: 3vh; */
+    margin:auto;
+}
+
+#profile p{
+    width:90%;
+    margin:auto;
+    margin-bottom: 3vh;
+
+}
+
+#profile .cv a i{
+    color: white;
+}
+
+#pic{
+    max-width:15vw;
+    margin:auto;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+#pic img{
+    width:85%;
+    margin:auto;
+    border-radius: 5vh;
+}
+
+/* The footer */
+#footer{
+    z-index: 5;
+    box-sizing: border-box;
+    position:fixed;
+    left:0vw;
+    bottom:3vh;
+    width:100%;
+    height:6vh;
+    display:flex;
+    font-size:2vw;
+    justify-content: space-between;
+    align-items: center;
+    /* border-style:solid; */
+    border-top:solid;
+    border-bottom:solid;
+
+
+    /* background-color:rgba(80,10,10,0.8); */
+    /* background-color: black; */
+    background-color:rgba(50,50,50,0.8);
+    border-color:white;
+} 
+
+.buttons{
+    margin-left:5vh;
+}
+/* setting link buttons with in the footer */
+.buttons .social{
+    display:flex;
+    /* gap:15px; */
+    gap:1vw;
+}
+
+.buttons .social a:link{
+    text-decoration:none;
+}
+
+.buttons .social a:visited{
+    text-decoration:none;
+
+}
+
+.buttons .social i{
+    font-size:3vh;
+    color:white;
+    cursor:pointer;
+    border-radius: 20%;
+
+}
+
+.buttons .social i:hover{
+    /* font-size:3vh; */
+    transition: all 0.7s ease-in-out;
+    background-color:white;
+    color:orange;
+    cursor:pointer;
+    border-radius:50%;
+
+}

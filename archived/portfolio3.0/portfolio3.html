@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nick Griffiths Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+  <link rel="stylesheet" href="./assets/font.css">
+
+
+  <link href = './css/main.css' rel = 'stylesheet'>
+
+  <link href = './css/parallax.css' rel = 'stylesheet'>
+  <link href = './css/selftype.css' rel = 'stylesheet'>
+  <link href = './css/projectgrid.css' rel = 'stylesheet'>
+  <link href = './css/buttons.css' rel = 'stylesheet'>
+  <link href = './css/tooltips.css' rel = 'stylesheet'>
+
+  <link href = './css/mediaqueries.css' rel = 'stylesheet'>
+
+
+
+
+
+
+
+  <script src="./js/main.js" defer></script>
+  <script src="./js/myprojects.js" defer></script>
+  <script src="./js/selftype.js" defer></script>
+  <script src="./js/projectgrid.js" defer></script>
+
+  
+
+</head>
+
+<body>
+
+<!-- left side  -->
+<div id = "main">
+    <div id = "header">
+        
+        <div id = "headerpad"></div>
+
+        <div id = "titlesouter">
+            <div id = "titlesinner">
+                <h2>Nick Griffiths</h2>
+                <h4>Developer and data Analyst in Pori FI</h4>
+            </div>
+        </div>
+
+            <!-- Self typed section -->
+        <div id = 'selftype'>
+            <div id = 'sthead' class = 'selftype' data-text = '{"messages":["a Developer","an Educator","a Data scientist","...check it out"]}'>
+                <p id = 'start'><span>I am&nbsp;</span></p>
+                <p id = 'typed'> <span class = 'typed'></span> <span id = 'cursor' class = 'hidden cursor hidden'>|</span>
+                </p> 
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <!-- central content area -->
+    <div id = "center">
+
+        <div id = 'searches'>
+            <!-- <div id = "searchbar">
+                <input id="usersearch" placeholder="search using key words e.g python"><button id = "go">go</button>
+            </div> -->
+            
+            <div id = "quicksearch">
+                <div class = 'searchbuttons'  data-filters = 'Web'>Web</div>
+                <div class = 'searchbuttons'  data-filters = "App">Apps</div>
+                <div class = 'searchbuttons'  data-filters = "Data,visualisation,Modelling, ML">Data</div>
+                <div class = 'searchbuttons'  data-filters = "Backend">Back End</div>
+                <div class = 'searchbuttons'  data-filters = "Python">Python</div>
+
+            </div>
+        </div>
+
+        <div class = "commentarypanel">
+            
+
+            <br>
+
+
+        </div>
+
+        <div id = "projectgrid" class = "parallax">
+
+        </div>
+        
+
+        <div class = "commentarypanel">
+          <br>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- right side panel -->
+    <div id = "right" class = "hidden">
+
+        <div id = "hidebutton">
+            <button id = "righthide"><i class="far fa-arrow-alt-circle-right"></i></button>
+
+        </div>
+        
+        <!-- profile section -->
+        <div id = "profile" >
+
+            
+            <div id = 'pic' class = 'profile-pic'>
+                <img src = './assets/profile.png'>
+            </div>
+
+
+            <p class = 'tag'><b> Developer | Educator | Data scientist</b></p>
+            <p class = 'about'>
+            I am passionate about Strategic thinking and 
+            solving problems, especially when it impacts 
+            the experience of others. Improving existing 
+            systems and creating new ones give me a 
+            real buzz. </br></br>
+            
+            I love building stuff, be it fun little bits of 
+            software/webpages for family/friends, or large 
+            scale projects for colleagues and companies.
+            In particular I love the satisfaction of building 
+            solutions that save colleagues and businesses 
+            time, effort and money.
+            
+            </p>
+        
+       
+
+            <p class = "tooltip cv">
+                <span class = "tooltiptext">see resume</span>
+
+                    <a href = "./assets/cvs/current.pdf" target="_blank">
+                        <i class="fa-regular fa-address-card"></i>
+                    </a>
+
+            </p>
+
+
+        
+
+
+
+        </div>
+
+
+
+
+    </div>
+    
+
+    <!-- footer -->
+    <div id = "footer">
+        <div class = 'buttons'>
+            <div class = 'social'>
+<!-- 
+                visit instagram
+                <div class = "tooltip">
+                    <a href = '' >
+                        <i class="fa-brands fa-instagram"></i> 
+                    </a> 
+                    <span class = "tooltiptext"> Go to instagram </span>
+                </div> -->
+                
+                <!-- visit main github -->
+                <div class = "tooltip">
+                    <a href = 'https://github.com/legriffalo' target = "_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <span class = "tooltiptext"> Go to primary Github </span>
+
+                </div>
+                <!-- visit secondary github -->
+                <div class = "tooltip">
+                    <a href = 'https://github.com/legriffalo-alt' target = "_blank">
+                        <i class = "icon-alt"></i>
+                    </a>
+
+                    <span class = "tooltiptext"> Go to my secondary Github </span>
+
+                </div>
+
+                <!-- visit Linked in  -->
+                <div class = "tooltip">
+                    <a href = 'https://www.linkedin.com/in/nick-griffiths-7b139198/' target = "_blank" >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <span class = "tooltiptext"> Go to LinkedIn </span>
+
+                </div>
+                <!-- Open CV -->
+                <div class = "tooltip">
+                    <a href = "./assets/cvs/current.pdf" target = "_blank">
+                        <i class="far fa-file"></i>                    </a>
+                    <span class = "tooltiptext"> Go to Resume </span>
+
+                </div>
+
+                
+
+
+            </div>
+
+        </div>
+    </div>
+<!--show BIO button-->
+    <button id = "rightshow">
+        <span>BIO</span>
+    </button>
+
+</body>

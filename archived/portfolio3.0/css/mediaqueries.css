@@ -1,0 +1,72 @@
+@media only screen and (max-width: 700px){
+    #sthead {
+      font-size: 2vh;
+      line-height: 2vh;
+    }
+    #selftype{
+        min-width: 21vh;   
+    } 
+    #headerpad{
+        width:20vw;
+
+    }
+
+    #header{
+        height:10vh;
+    }
+
+    #searches{
+        top:14vh;
+    }
+
+    #right{
+        width:60vw;
+    }
+    #rightshow{
+        width:4vw;
+    }
+
+    #rightshow span{
+        font-size: 2.5vw;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px){
+    #header{
+        height:10vh;
+    }
+
+    #sthead {
+      font-size: 1.6vh;
+      line-height: 1.6vh;
+    }
+    #selftype{
+        min-width: 15vh;   
+    } 
+
+    #searches{
+        top:13.5vh;
+
+    }
+
+    .card {
+        z-index: 3;
+        font-size:1.2vh;
+        min-width: 30px;
+        max-width:200px;
+    }
+
+    #quicksearch{
+        font-size: 1.6vh;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #rightshow{
+        width:2.5vw;
+    }
+    #rightshow span{
+        font-size:1.3em;
+    }
+}
