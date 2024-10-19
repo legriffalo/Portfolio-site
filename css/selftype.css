@@ -7,8 +7,8 @@
 #selftype{
     width: 27vh;
     height:100%;
-    border-style: dashed;
-    border-color: green;
+    /* border-style: dashed;
+    border-color: green; */
 } 
    
 #sthead{
@@ -19,8 +19,8 @@
     width:100%;
     display:flex;
     flex-direction: row;
-    border-color: red;
-    border-style: dashed; 
+    /* border-color: red;
+    border-style: dashed;  */
 }
 
 .cursor{
@@ -43,8 +43,8 @@
     font-weight: 900;
     display:inline;
     color:purple;
-    border-style: dashed;
-    border-color: blue; 
+    /* border-style: dashed;
+    border-color: blue;  */
 
 }
 

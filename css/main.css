@@ -60,8 +60,8 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    border-color: antiquewhite;
-    border-style: dashed;
+    /* border-color: antiquewhite;
+    border-style: dashed; */
 
 }
 
@@ -115,6 +115,7 @@ body{
     background-color:rgba(80,10,50,0.8);
     color: white;
     height:8vh;
+    margin-top: 0;
     margin-bottom: 10vh;   
 }
 

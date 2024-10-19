@@ -165,7 +165,7 @@ function addListeners(){
     console.log("adding click listeners",els)
 
     els.forEach((el)=>{
-      el.addEventListener("pointerdown", (e)=>{
+      el.addEventListener("pointerup", (e)=>{
 
         console.log(e.target.tagName, "was clicked")
         if(e.target.tagName!='I' && e.target.tagName != 'A'){

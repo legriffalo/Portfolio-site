@@ -61,7 +61,10 @@
         height:2.5vh;
         width:100%;
     }
-}
+
+    .cardbacklinks i {
+        font-size: 2em;
+    }
 
 @media only screen and (min-width: 1000px){
     #rightshow{
@@ -82,7 +85,10 @@
         width:100%; */
     }
 
-    .cv i{font-size:40px ;}
+    .cv i{
+        font-size:40px;
+    }
+
 }
 
 
