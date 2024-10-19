@@ -5,51 +5,46 @@
 }
 
 #selftype{
-
-    min-width: 30vh;
-    width:fit-content;
+    width: 27vh;
     height:100%;
-    /* border-style: dashed;
-    border-color: green; */
+    border-style: dashed;
+    border-color: green;
 } 
    
 #sthead{
     margin-top: 0.2vh;
     line-height: 3vh;
-    font-size: 1.6em;
+    font-size: 2.5vh;
     height:100%;
-    width:fit-content;
+    width:100%;
     display:flex;
     flex-direction: row;
-    /* border-color: red;
-    border-style: dashed;  */
+    border-color: red;
+    border-style: dashed; 
 }
 
 .cursor{
     margin-left: 0;
     margin-top: 0;
     width:2px;
-    font-weight: 900;
+    font-weight: 300;
     display:inline;
     color:purple;  
 }
 
 #typed{
     margin-top: 0vh;
-    width:fit-content;
+    min-width:fit-content;
     height:fit-content;
-    border-style: dashed;
-    border-color: orange;
+    /* border-style: dashed; */
+    /* border-color: orange; */
 }
 .typed{
     font-weight: 900;
     display:inline;
     color:purple;
-    max-width:20vw;
-    /* height:fit-content; */
-    /* border-style: dashed;
-    border-color: blue; */
-    border-width:0;
+    border-style: dashed;
+    border-color: blue; 
 
 }
 
@@ -59,7 +54,7 @@
     height: 100%;
     width: fit-content;
     color:orange;
-    border-style: dashed; 
+    /* border-style: dashed;  */
 }
 
 #start span{

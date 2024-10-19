@@ -41,18 +41,34 @@ body{
     justify-content: center;
     background-color: black;
     border-style:solid;
+    gap:1vw;
+
     /* border-top:solid;
     border-bottom: solid; */
-    gap:3vw;
+    
 }
 
 #headerpad{   
-    width:30vh;
+    width:20vw;
     height:100%;
+    /* border-style: dashed; */
 }
 
+#self_type_wrapper{
+    min-width:30vw;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: antiquewhite;
+    border-style: dashed;
+
+}
+
+
+
 #titlesouter{
-    width:50vw;
+    width:40vw;
     border-left: solid;
     border-right: solid;
 }

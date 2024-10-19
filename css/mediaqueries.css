@@ -1,40 +1,35 @@
-@media only screen and (max-width: 700px){
-    #sthead {
-      font-size: 1.7em;
-      line-height: 1.7em;
+@media only screen and (max-width: 750px){
+    
+    #quicksearch{
+        font-size: 1.6vh;
     }
-    #selftype{
-        min-width: 21vh;   
-    } 
     #headerpad{
-        width:20vw;
+        width:1vw;
 
     }
-
-    #header{
-        height:10vh;
+    #titlesouter{
+        width:65vw;
     }
-
-    #searches{
-        top:14vh;
-    }
-
     #right{
-        width:60vw;
+        width:80vw;
     }
     #rightshow{
-        width:5vw;
+        width:5.5vw;
     }
-
     #rightshow span{
         font-size: 2.5vw;
     }
+    #righthide{
+        width:5vw;
+    }
+    
+
+
 
     .cardfront .title{
         font-size:2.8vw;
     }
-      
-      .card:hover .cardfront p{
+    .card:hover .cardfront p{
         margin-top: 0;
         font-size: 2vw;
         height:2.5vh;
@@ -45,52 +40,27 @@
 
 
   @media only screen and (max-width: 500px){
-    #header{
-        height:10vh;
-    }
-
-    #right{
-        width:75vw;
-    }
-    #rightshow{
-        width:5vw;
-    }
-
-    #sthead {
-      font-size: 1.6vh;
-      line-height: 1.6vh;
+    #sthead{
+        font-size: 1.5vh;
     }
     #selftype{
-        min-width: 18vh;   
-    } 
-
-    #searches{
-        top:13.5vh;
-
+        width: 20vh;
     }
-
     .card {
         z-index: 3;
         font-size:1.2vh;
         min-width: 30px;
         max-width:350px;
     }
-
-    #quicksearch{
-        font-size: 1.6vh;
-    }
-
     .cardfront .title{
         font-size:3vw;
-    }
-      
-      .card:hover .cardfront p{
+    } 
+    .card:hover .cardfront p{
         margin-top: 0;
         font-size: 2vw;
         height:2.5vh;
         width:100%;
     }
-
 }
 
 @media only screen and (min-width: 1000px){
