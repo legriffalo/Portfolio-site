@@ -13,14 +13,10 @@
     border-color: green; */
 } 
    
-
-
-
-
 #sthead{
     margin-top: 0.2vh;
     line-height: 3vh;
-    font-size: 3vh;
+    font-size: 1.6em;
     height:100%;
     width:fit-content;
     display:flex;
@@ -42,8 +38,8 @@
     margin-top: 0vh;
     width:fit-content;
     height:fit-content;
-    /* border-style: dashed;
-    border-color: orange; */
+    border-style: dashed;
+    border-color: orange;
 }
 .typed{
     font-weight: 900;
@@ -63,7 +59,7 @@
     height: 100%;
     width: fit-content;
     color:orange;
-    /* border-style: dashed;  */
+    border-style: dashed; 
 }
 
 #start span{
