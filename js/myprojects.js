@@ -32,7 +32,7 @@ const data = `{
                 "I used my data base of finnish words and a Python script to create JSON flashcards sets.",
                 "These can be loaded into the vocab PWA to be used",
                 "A set of 5000 words will be hosted on a simple sit to make this process simpler"],
-    "tags":["Web","Python","JS","UI","PWA","JSON", "Data","App"],
+    "tags":["Web","Python","JS","PWA","JSON", "Data","App"],
     "links":[{"source":"https://github.com/legriffalo-alt/flashcards","type":"github"},
              {"source":"https://legriffalo-alt.github.io/flashcards/flashcards.html","type":"site","dim":"width=500,height=800"}],
 

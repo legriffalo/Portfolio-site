@@ -104,7 +104,7 @@ function builtProjectBoard(filters){
         // hammer for in progress indicator
         //<i class="fas fa-hammer"></i>
 
-        currentProject.inprogress? ongoing = `<img class = "inprogress" src = "assets/backgrounds/inprogress.png">`:ongoing = null;
+        currentProject.inprogress? ongoing = `<img class = "inprogress" src = "assets/backgrounds/inprogress.png">`:ongoing = '';
         document.getElementById(`row${Math.floor(i/rows)}`).innerHTML+= 
         
         `<div class="card">

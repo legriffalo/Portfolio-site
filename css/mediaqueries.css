@@ -29,6 +29,18 @@
     #rightshow span{
         font-size: 2.5vw;
     }
+
+    .cardfront .title{
+        font-size:2.8vw;
+    }
+      
+      .card:hover .cardfront p{
+        margin-top: 0;
+        font-size: 2vw;
+        height:2.5vh;
+        width:100%;
+    }
+
   }
 
 
@@ -60,6 +72,18 @@
     #quicksearch{
         font-size: 1.6vh;
     }
+
+    .cardfront .title{
+        font-size:3vw;
+    }
+      
+      .card:hover .cardfront p{
+        margin-top: 0;
+        font-size: 2vw;
+        height:2.5vh;
+        width:100%;
+    }
+
 }
 
 @media only screen and (min-width: 1000px){
@@ -69,4 +93,42 @@
     #rightshow span{
         font-size:1.3em;
     }
+    .cardfront .title{
+        font-size:1.1vw;
+        
+    }
+      
+      .card:hover .cardfront p{
+        font-size: 0.8vw;
+        /* margin-top: 0;
+        height:2.5vh;
+        width:100%; */
+    }
+
+    .cv i{font-size:40px ;}
+}
+
+
+@media only screen and (min-width: 2000px){
+
+    .cardfront .title{
+        font-size:30px;
+        
+    }
+      
+      .card:hover .cardfront p{
+        font-size:20px;
+        /* margin-top: 0;
+        height:2.5vh;
+        width:100%; */
+    }
+
+    #pic{
+        max-width:10vw;
+        margin:auto;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+    }
+
+
 }
