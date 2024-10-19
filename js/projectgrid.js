@@ -93,7 +93,7 @@ function builtProjectBoard(filters){
           el.type == "site"? icon = 'fas fa-globe':null;
 
           el.dim? dimensions = el.dim:dimensions = "width=600,height=600";
-          infoLinks +=`<p><i data-name = "${currentProject.name}" data-dimensions = "${dimensions}" data-target = "${el.source}"    class = "backlink ${icon}"></i></p>`
+          infoLinks +=`<p><i data-name = "${currentProject.name} ${el.type}" data-dimensions = "${dimensions}" data-target = "${el.source}"    class = "backlink ${icon}"></i></p>`
         })
 
         // inprogress flag adds hammer icon to projects that are not fully polished yet
@@ -159,7 +159,7 @@ function addListeners(){
     els = [...document.getElementsByClassName("card")]
 
     els.forEach((el)=>{
-      el.addEventListener("pointerup", (e)=>{
+      el.addEventListener("pointerdown", (e)=>{
 
         // console.log(e.target.tagName, "was clicked")
 
@@ -178,7 +178,8 @@ function addListeners(){
 
           //try to open my project/site in new window
           try{
-            window.open(e.target.dataset.target, e.target.dataset.name , e.target.dataset.dimensions);
+            windowName = e.target.dataset.name
+            window.open(e.target.dataset.target, windowName , e.target.dataset.dimensions);
           }
 
           // just in case there is security/pop up blocker

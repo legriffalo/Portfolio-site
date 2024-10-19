@@ -48,7 +48,7 @@ const data = `{
                 "To do this I built a minimal app that monitored/showed my progress",
                 "The app is a PWA using PWA manifest that tracks quitting stats and keeps a smoking/quitting log stored using JSON and displayed in a calendar using calendar.js"],
     "tags":["JS","Data","JSON","Web","UI","App"],
-    "links":[{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
+    "links":[{"source":"https://github.com/legriffalo/quitting-smoking","type":"github"},
              {"source":"https://legriffalo.github.io/quitting-smoking/stopsmoking.html","type":"site","dim":"width=500,height=800"}],
 
     "general":["data"]
@@ -84,7 +84,7 @@ const data = `{
                  "The project used Flask in python (Django light) as backend.",
                  "The next step is to build a CNN and pickle it for use in the React project"],
     "tags":["Web","APIs","Backend","SQL","Python","Flask","Data"],
-    "links":[{"source":"","type":"web"}],
+    "links":[{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Numbers%20computer%20vision","type":"github"}],
     
     
     "general":["data"]
@@ -104,7 +104,7 @@ const data = `{
                   "This project is currently being built 20/10/24"],
 
     "tags":["Python","App"],
-    "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
+    "links":[{"source":"https://github.com/legriffalo/nordic-keyboard-converter","type":"github"}],
 
     "general":["data"]
 

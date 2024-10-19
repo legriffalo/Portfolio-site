@@ -108,7 +108,7 @@ body{
     background-color: rgba(0,0,0,0);
     width:95vw;
     margin:auto;
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 
 .commentarypanel{
@@ -139,12 +139,14 @@ body{
 
 /* All content in the right hand panel */
 #right{
+    font-size: 0.9em;
+
     z-index:6;
     position:fixed;
     right:0vw;
-    top:26vh;
-    width:40vw;
-    height:71vh;
+    top:25vh;
+    width:50vw;
+    height:72vh;
     display:flex;
     flex-direction: row;
     border-radius: 3vh 0 0 3vh;
@@ -177,7 +179,7 @@ body{
 }
 
 #pic{
-    max-width:15vw;
+    max-width:12vw;
     margin:auto;
     margin-top: 3vh;
     margin-bottom: 1vh;

@@ -28,7 +28,8 @@ showBio.addEventListener("pointerdown",(e)=>{
 
 
 hideBio.addEventListener("pointerdown",(e)=>{
-    document.getElementById("right").classList.add("hidden")
+    // e.stopPropagation();
+    document.getElementById("right").classList.add("hidden");
 })
 
 
