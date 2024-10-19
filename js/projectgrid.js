@@ -1,110 +1,105 @@
+//check if any cross over between two arrays
+// used to check project tags against search filters 
 function filterCheck(a, b){
-  console.log(a)
-  console.log(b)
   let success = 0;
   a.forEach((val) => { 
     b.includes(val)? success = 1 : null;
-    console.log(success , val)
   });
-  console.log(success)
   return success
 }
-
-
-
+// clear the project display grid ready to be redrawn
 function clearGrid(){
   document.getElementById('projectgrid').innerHTML = '';
 }
 
 
-
+// build process for DOM elements
 function builtProjectBoard(filters){
     // get all project data from the file 
     projects = JSON.parse(data);
     // console.log(projects);
-    
-    
     //list of all projects used to grab each element for genration
     let projectsList = Object.keys(projects);
-
-    // filter out unwanted projects
+    
+    
+    // filter out unwanted projects using quick search filters in head
     if(filters && filters.length>0){
       toRemove = [];
       projectsList.forEach((projectNumber)=>{
-        console.log("the project being checked is ",projectNumber )
-        
+        // console.log("the project being checked is ",projectNumber )
         
         allTags = Array.from(projects[projectNumber].tags);
-        console.log("its tags are ", allTags)
-        console.log("Tags to match are ", filters)
+        // console.log("its tags are ", allTags)
+        // console.log("Tags to match are ", filters)
         let matches = 0;
-        // filterCheck(filters, allTags)?matches = 1:null;  
-        // console.log("did it match ", matches)
-        filterCheck(filters, allTags)?matches = 1:toRemove.push(projectNumber);  
-        // console.log(matches,projects, projectsList )
+        // if no matches add project to removal list
+        filterCheck(filters, allTags)? matches = 1:toRemove.push(projectNumber);  
         });
+        // console.log("projects to remove are", toRemove)
 
-        console.log("projects to remove are", toRemove)
-
-
+        // remove all unwanted projects
         toRemove.length>0? toRemove.forEach(el=>{
           remover(projectsList,el)
         }):null;
     }
 
     else{console.log("no filters showing all projects")}
+
     // number of panels required
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
 
+    // poor variable name choice here but I'm not going to change it just yet
     let rows = Math.floor(vw/450);
     rows = rows>0? rows:1;
     console.log("row width is ", rows);
 
-    //filter out work in progress projects
-    // projectsList = projectsList.filter((a)=>{if(projects[a].show ==1) return 1});
-
-    // console.log(projectsList);
-
+    //cycle through projects data and build them in DOM
     // generate project grid
     for(let i = 0; i<projectsList.length; i++){
       console.log("creating", projectsList[i])
+
       if(i%rows == 0){
         document.getElementById('projectgrid').innerHTML+= `<div id = "row${i/rows}" class = "row"></div>`
       }
 
+      
+      // show flag allows data for many projects to be stored and quick changes to be made
       if (projects[projectsList[i]].show == 1 ){
         
+
         currentProject = projects[projectsList[i]]
+        
         // get project summary
-
         let summaryString =currentProject.description;
+        
         // get details
-
         let infoString = '';
         currentProject.specifics.forEach((el)=>{
           infoString += el + '<br>';
         });
 
-        //get project link data
+        // get project links data
         infoLinks = ""
+
+
         let ll =  currentProject.links;
+    
         ll.forEach((el)=>{
           let icon
+
+          // currently only two link types but will expand with google play etc as needed
+          // could use a mapping if this expands sufficiently
           el.type == "github"? icon = 'fa-brands fa-github':null;
           el.type == "site"? icon = 'fas fa-globe':null;
 
           el.dim? dimensions = el.dim:dimensions = "width=600,height=600";
-          
-
           infoLinks +=`<p><i data-name = "${currentProject.name}" data-dimensions = "${dimensions}" data-target = "${el.source}"    class = "backlink ${icon}"></i></p>`
         })
 
-        // console.log(infoLinks)
-// <i class = "backlink ${icon}"></i>
-        // hammer for in progress indicator
-        //<i class="fas fa-hammer"></i>
-
+        // inprogress flag adds hammer icon to projects that are not fully polished yet
         currentProject.inprogress? ongoing = `<img class = "inprogress" src = "assets/backgrounds/inprogress.png">`:ongoing = '';
+        
+        // build the DOM element using previously determined variables 
         document.getElementById(`row${Math.floor(i/rows)}`).innerHTML+= 
         
         `<div class="card">
@@ -158,32 +153,35 @@ function builtProjectBoard(filters){
     }
   }
 
-
+// once grid is built in DOM add listeners
 function addListeners(){
-
+    // get all cards to add pointer listeners
     els = [...document.getElementsByClassName("card")]
-    console.log("adding click listeners",els)
 
     els.forEach((el)=>{
       el.addEventListener("pointerup", (e)=>{
 
-        console.log(e.target.tagName, "was clicked")
+        // console.log(e.target.tagName, "was clicked")
+
+        // stop embedded links from triggering listener hideshow action 
         if(e.target.tagName!='I' && e.target.tagName != 'A'){
-        console.log("triggered a click")
 
-      
-        el.getElementsByClassName("card-content")[0].classList.toggle("hidden");
-        el.getElementsByClassName("background")[0].classList.toggle("hidden");
-        // e.target.getElementsByClassName("backdrop")[0].classList.toggle("hidden");
+          el.getElementsByClassName("card-content")[0].classList.toggle("hidden");
+          el.getElementsByClassName("background")[0].classList.toggle("hidden");
+          // e.target.getElementsByClassName("backdrop")[0].classList.toggle("hidden");
 
-        el.getElementsByClassName("cardback")[0].classList.toggle("hidden");
+          el.getElementsByClassName("cardback")[0].classList.toggle("hidden");
         }
         
         else{
           console.log("clicked link to other site")
+
+          //try to open my project/site in new window
           try{
             window.open(e.target.dataset.target, e.target.dataset.name , e.target.dataset.dimensions);
           }
+
+          // just in case there is security/pop up blocker
           catch{
             confirm(`looks like a popup blocker is stopping you from reaching ${e.target.dataset.target}`)
           }
@@ -196,9 +194,8 @@ function addListeners(){
 }
 
 
-
-
-
+// could use createGrid in main.js but file order may need switching so leave for now
+// make sure the grid is built at load time
 builtProjectBoard()
 addListeners()
 

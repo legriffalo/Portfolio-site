@@ -1,23 +1,4 @@
-// detect device type using ternary operator
-const detectDeviceType = () =>
-    /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent)
-      ? 'Mobile'
-      : 'Desktop';
-
-
-
-vpHeight = window.innerHeight; 
-
-lb = 0.05*vpHeight;
-ub = 0.5*vpHeight;
-
-highlightInterval = "";
-
-
-
-
-// console.log("margins are ", ub , lb )
-
+// check if rows are ned highlighting
 function centralProject(){
     rows = [...document.getElementsByClassName("row")];
     rows.forEach(el=>{
@@ -32,15 +13,28 @@ function centralProject(){
     })
 }
 
+// get viewport height
+vpHeight = window.innerHeight; 
+//set bounds for "viewing area"
+
+// When top left of row is between 5vh and 50vh from the top 
+lb = 0.05*vpHeight;
+ub = 0.5*vpHeight;
+
+// interval to make regular checks
+highlightInterval = "";
 
 
+// detect device type using ternary operator
+const detectDeviceType = () =>
+    /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent)
+      ? 'Mobile'
+      : 'Desktop';
 
 
 // if device is mobile device then remove the special character buttons
 if(detectDeviceType()== 'Mobile'){
-
     setInterval(centralProject,500);
-
 }
 
 

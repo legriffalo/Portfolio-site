@@ -1,6 +1,6 @@
 let filters = [];
 
-
+//remove an element from an array
 function remover(array, item){
     const index = array.indexOf(item);
     if (index > -1) { // only splice array when item is found
@@ -8,6 +8,7 @@ function remover(array, item){
     }
 }
 
+// create grid function combines all parts defined in project grid
 function createGrid(){
     clearGrid()
     builtProjectBoard(filters)
@@ -15,10 +16,12 @@ function createGrid(){
 }
 
 
+// elements to add listeners as variables
 let showBio = document.getElementById("rightshow");
 let hideBio = document.getElementById("righthide");
 
 
+// add all listeners
 showBio.addEventListener("pointerdown",(e)=>{
     document.getElementById("right").classList.remove("hidden")
 })
@@ -34,6 +37,7 @@ window.onresize = (e)=>{
 }
 
 
+// Add listeners to the quick search bar 
 let quicksearchs = [...document.getElementsByClassName("searchbuttons")];
 quicksearchs.forEach((el) => {
     el.addEventListener("pointerdown",(e)=>{
@@ -56,9 +60,8 @@ quicksearchs.forEach((el) => {
         }
         
 
-
+        // Once filters are updated rerender the grid
         createGrid(filters);
-        // console.log("current filters being applied are ", filters)
 
     })
     

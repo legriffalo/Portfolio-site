@@ -7,10 +7,9 @@ const data = `{
     "inprogress":0,
     "name":"Speedia extension",
     "coverimage":"./assets/projects/speedia.png",
-    "description":"Building a chrome extension",
-    "specifics":["I got tired of being locked at a set media speed on training videos/site",
-                "So I decided to build an extension to help me speed things up.",
-                "Using Manifest 3.0 and web languages I built an extension that allows media playback changes and has a useful speed reader"],
+    "description":"Chrome Extension",
+    "specifics":["I got tired of being locked at a set media speed on training videos/site so I built an Extension to allow speed changes.",
+                "Using Manifest 3.0 and web languages I built an extension that allows media playback changes and has a useful speed reader."],
     "tags":["JS","Web","UI","API"],
     
     "links":[{"source":"https://github.com/legriffalo/speedmedia-chrome-extension","type":"github"},
@@ -27,13 +26,11 @@ const data = `{
 
     "name":"Finnish vocabulary quiz",
     "coverimage":"./assets/projects/vocabgames.png",
-    "description":"The intial MVP phase of larger project",
-    "specifics":["I needed a way to quickly practice and expand my Finnish vocabulary",
-                "To do this I built a small PWA to load on to my phone to use for daily vocab building",
-                "I used my data base of finnish words and a Python script to create JSON flashcards sets.",
-                "These can be loaded into the vocab PWA to be used",
-                "A set of 5000 words will be hosted on a simple sit to make this process simpler"],
-    "tags":["Web","Python","JS","PWA","JSON", "Data","App"],
+    "description":"Vocabulary App (PWA)",
+    "specifics":["I needed a way to quickly practice and expand my Finnish vocabulary, to do this I built a small PWA to use for daily vocab building",
+                "The PWA allows building of vocabulary sets on the go and stores them in a JSON object on localStorage it can also load in JSON data sets for use",
+                "A set of 5000 words will be hosted on a simple site to make this process simpler"],
+    "tags":["Web","Python","JS","JSON", "Data","App"],
     "links":[{"source":"https://github.com/legriffalo-alt/flashcards","type":"github"},
              {"source":"https://legriffalo-alt.github.io/flashcards/flashcards.html","type":"site","dim":"width=500,height=800"}],
 
@@ -46,11 +43,10 @@ const data = `{
 
     "name":"Stop smoking tracker",
     "coverimage":"./assets/projects/stopsmoking.png",
-    "description":"The intial scraping phase of a larger project",
-    "specifics":["I wnated to quit smoking more effectively",
-                "To do this I wanted an accountability app that monitored/showed my progress",
-                "I had previously struggled to appreciate 3rd party apps so I made my own",
-                "The app is a PWA using manifest that tracks quitting stats and keeps a smoking/quitting log in a calendar using calendar.js"],
+    "description":"PWA for quiting smoking",
+    "specifics":["I wanted to quit smoking more effectively",
+                "To do this I built a minimal app that monitored/showed my progress",
+                "The app is a PWA using PWA manifest that tracks quitting stats and keeps a smoking/quitting log stored using JSON and displayed in a calendar using calendar.js"],
     "tags":["JS","Data","JSON","Web","UI","App"],
     "links":[{"source":"https://github.com/legriffalo/finnishvocab/tree/main/Finnish%20scraping%20project","type":"github"},
              {"source":"https://legriffalo.github.io/quitting-smoking/stopsmoking.html","type":"site","dim":"width=500,height=800"}],
@@ -66,7 +62,7 @@ const data = `{
 
     "name":"Finnish webscraper",
     "coverimage":"./assets/projects/scraping.png",
-    "description":"The intial scraping phase of a larger project",
+    "description":"Finnish Words Webscraper (BS4)",
     "specifics":["I needed a database of Finnish words on which to base later learning projects.",
                 "To do this I used beautiful soup to crawl finnish grammar websites",
                 "Once scraped,my plan was to load the words into a database to form a backend for subsequent projects"],
@@ -82,10 +78,11 @@ const data = `{
 
     "name":"Image storage",
     "coverimage":"./assets/projects/imagestorage.png",
-    "description":"Webpage to facilitate collecting image for CNN image recognition projects",
-    "specifics": ["To provide data sets for image recognition I built a site to collect handwritten data",
-                 "This site collects hand written numbers and sends them to SQL database via fetch API",
-                 "To enable updates to the database to be safe from SQL injection I used a flask server as a go between." ],
+    "description":"Webpage to collect image data",
+    "specifics": ["To provide data sets for image recognition for a react project I am building I built a small site to collect handwritten digit data.",
+                 "This site collected images of hand written numbers encoded them to base64 and then sends them to SQL database via fetch API.",
+                 "The project used Flask in python (Django light) as backend.",
+                 "The next step is to build a CNN and pickle it for use in the React project"],
     "tags":["Web","APIs","Backend","SQL","Python","Flask","Data"],
     "links":[{"source":"","type":"web"}],
     
@@ -101,12 +98,11 @@ const data = `{
 
     "name":"Nordic keyboard converter",
     "coverimage":"./assets/projects/Nordic.png",
-    "description":"Python application to add unicode access hotkey to Windows",
-    "specifics": ["",
-                  "",
-                  "",
-                  "",
-                  ""],
+    "description":"Simple Python APP",
+    "specifics": ["This project aims to add a more convenient way to use umlaut on the UK keyboard.",
+                  "To this a small application is being built using Python, OS,",
+                  "This project is currently being built 20/10/24"],
+
     "tags":["Python","App"],
     "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
 
@@ -124,10 +120,11 @@ const data = `{
     "description":"I am writing a Python DS course",
     "specifics": ["The drafting and planning of the course has taken some time",
                   "I produced numerous machine learning models, breaking down the build process in to easy to follow flow charts for students",
-                  "The course is currently in a rough draft stage with only 3 initial sessions ready for deployment",
+                  "The course is currently in a rough draft stage with only 3 initial sessions ready for deployment to UDEMY",
                   "There will be more to follow..."],
+
     "tags":["Data","ML","Visualisation","Analysis","Python"],
-    "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
+    "links":[{"source":"https://github.com/legriffalo/python-for-ds-course-udemy","type":"github"}],
 
     "general":["data"]
 
@@ -140,11 +137,12 @@ const data = `{
     "name":"Mölkky madness app",
     "coverimage":"./assets/projects/molkky.png",
     "description":"A scoring and custom rule making app for Mölkky on web/mobile",
-    "specifics": ["During group trips away we always bring our Mölkky set, sometimes we like to mix up the rules and add challenges, managing these on paper was tedious so I built a better way",
+    "specifics": ["During group trips away with friends we always bring our Mölkky set, sometimes we like to mix up the rules and add challenges, managing these on paper was tedious so I built a better way",
                   "Mölkky Madness was built using javaScript, html, css in the first instance to make a webpage to test the useability",
                   "The next stage is to embed the GH-pages version in React-Native to produce an Android application"],
     "tags":["Web","JavaScript","front-end"],
-    "links":[{"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"github"}],
+    "links":[{"source":"https://github.com/legriffalo/molkkymadness","type":"github"},
+            {"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"site","dim":"width=500,height=800"}],
 
     "general":["Web","App"]
 
