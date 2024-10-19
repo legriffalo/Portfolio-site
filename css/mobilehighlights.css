@@ -1,0 +1,36 @@
+.hover .card .cardfront p{
+  margin-top: 0;
+  font-size: 1.8vmin;
+  height:2.5vh;
+  width:100%;
+}
+
+.hover .card  .background {
+    filter: brightness(1);
+  }
+  
+.hover .card .cardfront .topline{
+    height:2vh;
+    /* border-style: dashed; */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.hover  .card > .card-content {
+    inset: 20px;
+    top: auto;
+    /* font-size:1.5vw; */
+    background-color: rgba(1,1,1,0.5);
+  }
+
+.hover  .card .profile-image > svg {
+    margin-top: 0;
+    stroke: rgb(110, 252, 205);
+  }
+
+.hover .card .title {
+    opacity: 1;
+    translate: 0 0;
+    color:rgb(110, 252, 205);
+  }
