@@ -158,7 +158,29 @@ body{
     background-color: rgba(50,50,50,0.9);
     border-style:none;
     display: block;
+    overflow-y:auto;
+
 }
+
+/* width */
+#profile::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  #profile::-webkit-scrollbar-track {
+    background-color: rgba(50,50,50,0.9);
+  }
+  
+  /* Handle */
+  #profile::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  #profile::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 #profile .cv {
     font-size: 4vw;
