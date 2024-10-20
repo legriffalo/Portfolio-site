@@ -41,6 +41,12 @@ if(detectDeviceType()== 'Mobile'){
     setInterval(centralProject,300);
 }
 
+else{
+    window.onresize = (e)=>{
+        createGrid(filters)
+    }
+}
+
 
 //     console.log("mobile device using alternative method")
     

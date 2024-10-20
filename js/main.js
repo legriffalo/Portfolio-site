@@ -33,9 +33,9 @@ hideBio.addEventListener("pointerdown",(e)=>{
 })
 
 
-window.onresize = (e)=>{
-    createGrid(filters)
-}
+// window.onresize = (e)=>{
+//     createGrid(filters)
+// }
 
 
 // Add listeners to the quick search bar 
