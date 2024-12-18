@@ -19,8 +19,24 @@ const data = `{
 
     },
 
-
 "2":{
+    "show":"1",
+    "inprogress":0,
+
+    "name":"Noughts and Crosses Android app",
+    "coverimage":"./assets/projects/NandC.png",
+    "description":"Native android game app",
+    "specifics":["This is a small application built using React and capacitor.js",
+                "The app allows players to play the classic game, set their names and keep score of sessions."],
+    "tags":["Web","React","JS","JSON", "Capacitor"],
+    "links":[{"source":"","type":"github"},
+             {"source":"","type":"site","dim":"width=500,height=800"}],
+
+    "general":["data"]
+    },
+
+
+"4":{
     "show":"1",
     "inprogress":1,
 
@@ -37,7 +53,7 @@ const data = `{
     "general":["data"]
     },
 
-"3":{
+"5":{
     "show":"1",
     "inprogress":0,
 
@@ -56,7 +72,7 @@ const data = `{
     },
 
 
-"4":{
+"6":{
     "show":"1",
     "inprogress":0,
 
@@ -72,7 +88,7 @@ const data = `{
     "general":["data"]
     },
 
-"5":{
+"7":{
     "show":"1",
     "inprogress":0,
 
@@ -92,16 +108,15 @@ const data = `{
 
     },
 
-"6":{
+"3":{
     "show":"1",
-    "inprogress":1,
+    "inprogress":0,
 
     "name":"Nordic keyboard converter",
     "coverimage":"./assets/projects/Nordic.png",
-    "description":"Simple Python APP",
-    "specifics": ["This project aims to add a more convenient way to use umlaut on the UK keyboard.",
-                  "To this a small application is being built using Python, OS,",
-                  "This project is currently being built 20/10/24"],
+    "description":"Python windows application",
+    "specifics": ["This project is a more convenient way to use umlaut on the UK keyboard.",
+                  "Using pyautoGUI, keyboard and pyinstaller modules the applicationtracks all user input and adds hotkeys for umlaut characters"],
 
     "tags":["Python","App"],
     "links":[{"source":"https://github.com/legriffalo/nordic-keyboard-converter","type":"github"}],
