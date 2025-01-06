@@ -9,7 +9,7 @@ This is where I build my portfolio site, alternatively you can explore my Linked
 </a>
 
 <a href="https://legriffalo.github.io/Portfolio-site/">
-  <img src="https://img.shields.io/badge/?style=for-the-badge&logo=visit&logoColor=blue"/>
+  <img src="https://img.shields.io/badge/visit site?style=for-the-badge&logoColor=blue"/>
 </a>
 
 
