@@ -8,8 +8,8 @@ const data = `{
     "name":"Speedia extension",
     "coverimage":"./assets/projects/speedia.png",
     "description":"Chrome Extension",
-    "specifics":["I got tired of being locked at a set media speed on training videos/site so I built an Extension to allow speed changes.",
-                "Using Manifest 3.0 and web languages I built an extension that allows media playback changes and has a useful speed reader."],
+    "specifics":["I got tired of being locked at a set media speed on training videos/sites so I built an Extension to allow speed changes.",
+                "Using Manifest 3.0 and web languages I built an extension that injects media playback changes and has a useful speed reader."],
     "tags":["JS","Web","UI","API"],
     
     "links":[{"source":"https://github.com/legriffalo/speedmedia-chrome-extension","type":"github"},
@@ -19,7 +19,7 @@ const data = `{
 
     },
 
-"2":{
+"3":{
     "show":"1",
     "inprogress":0,
 
@@ -27,10 +27,11 @@ const data = `{
     "coverimage":"./assets/projects/NandC.png",
     "description":"Native android game app",
     "specifics":["This is a small application built using React and capacitor.js",
-                "The app allows players to play the classic game, set their names and keep score of sessions."],
-    "tags":["Web","React","JS","JSON", "Capacitor"],
-    "links":[{"source":"","type":"github"},
-             {"source":"","type":"site","dim":"width=500,height=800"}],
+                "The app allows players to play the classic game, set their names and keep score of sessions.",
+                "This was my second project using the capcitor.js framework",
+                "To develop this project I am working on incorporating an API to link to a db to enable multiplayer games"],
+    "tags":["Web","App", "React","JS","JSON", "Capacitor"],
+    "links":[{"source":"https://github.com/legriffalo/noughts-and-crosses","type":"github"}],
 
     "general":["data"]
     },
@@ -38,14 +39,14 @@ const data = `{
 
 "4":{
     "show":"1",
-    "inprogress":1,
+    "inprogress":0,
 
     "name":"Finnish vocabulary quiz",
     "coverimage":"./assets/projects/vocabgames.png",
     "description":"Vocabulary App (PWA)",
     "specifics":["I needed a way to quickly practice and expand my Finnish vocabulary, to do this I built a small PWA to use for daily vocab building",
                 "The PWA allows building of vocabulary sets on the go and stores them in a JSON object on localStorage it can also load in JSON data sets for use",
-                "A set of 5000 words will be hosted on a simple site to make this process simpler"],
+                "To develop this project further I plan to replace it with a ts react version."],
     "tags":["Web","Python","JS","JSON", "Data","App"],
     "links":[{"source":"https://github.com/legriffalo-alt/flashcards","type":"github"},
              {"source":"https://legriffalo-alt.github.io/flashcards/flashcards.html","type":"site","dim":"width=500,height=800"}],
@@ -108,7 +109,7 @@ const data = `{
 
     },
 
-"3":{
+"2":{
     "show":"1",
     "inprogress":0,
 
@@ -116,7 +117,7 @@ const data = `{
     "coverimage":"./assets/projects/Nordic.png",
     "description":"Python windows application",
     "specifics": ["This project is a more convenient way to use umlaut on the UK keyboard.",
-                  "Using pyautoGUI, keyboard and pyinstaller modules the applicationtracks all user input and adds hotkeys for umlaut characters"],
+                  "Using pyautoGUI, keyboard and pyinstaller modules NKC tracks all user input and adds hotkeys for umlaut characters"],
 
     "tags":["Python","App"],
     "links":[{"source":"https://github.com/legriffalo/nordic-keyboard-converter","type":"github"}],
@@ -152,19 +153,17 @@ const data = `{
     "name":"Mölkky madness app",
     "coverimage":"./assets/projects/molkky.png",
     "description":"A scoring and custom rule making app for Mölkky on web/mobile",
-    "specifics": ["During group trips away with friends we always bring our Mölkky set, sometimes we like to mix up the rules and add challenges, managing these on paper was tedious so I built a better way",
-                  "Mölkky Madness was built using javaScript, html, css in the first instance to make a webpage to test the useability",
-                  "The next stage is to embed the GH-pages version in React-Native to produce an Android application"],
+    "specifics": ["During group trips away with friends we always bring our Mölkky set, we like to mix up the rules and add challenges",
+                  "I wanted to build an app to help with this.",
+                  "Mölkky Madness uses javaScript, html, css hosted on GH-pages for user testing",
+                  "The next stage is to run this through the ionoc/capacitor framework to create android APK"],
     "tags":["Web","JavaScript","front-end"],
     "links":[{"source":"https://github.com/legriffalo/molkkymadness","type":"github"},
-            {"source":"https://legriffalo.github.io/molkkymadness/molkky.html","type":"site","dim":"width=500,height=800"}],
+            {"source":"https://legriffalo.github.io/molkkymadness/","type":"site","dim":"width=500,height=800"}],
 
     "general":["Web","App"]
 
 }
-
-
-
 
 }`
 
