@@ -1,47 +1,8 @@
-@media only screen and (max-width: 750px){
-    #pic{
-        max-width:15vw;
-        
-    }
-    #quicksearch{
-        font-size: 1.6vh;
-    }
-    #headerpad{
-        width:1vw;
-
-    }
-    #titlesouter{
-        width:65vw;
-    }
-    #right{
-        width:80vw;
-    }
-    #rightshow{
-        width:5.5vw;
-    }
-    #rightshow span{
-        font-size: 2.5vw;
-    }
-    #righthide{
-        width:5vw;
-    }
-    .cardfront .title{
-        font-size:2.8vw;
-    }
-    .card:hover .cardfront p{
-        margin-top: 0;
-        font-size: 2vw;
-        height:2.5vh;
-        width:100%;
-    }
-
-}
-
-
-  @media only screen and (max-width: 500px){
+/*small screens*/
+@media only screen and (max-width: 500px){
     #right{
         width:85vw;
-        font-size: 0.8em;
+        font-size: 2.7vmax;
     }
     #sthead{
         font-size: 1.5vh;
@@ -70,8 +31,58 @@
     }
 }
 
+/*slightly larger screen*/
+@media only screen and (max-width: 750px){
+    #pic{
+        max-width:15vw;
+        
+    }
+    #quicksearch{
+        font-size: 1.6vh;
+    }
+    #headerpad{
+        width:1vw;
+
+    }
+    #titlesouter{
+        width:65vw;
+    }
+    #right{
+        width:80vw;
+        font-size: 3.7vw;
+
+        
+    }
+    #rightshow{
+        width:5.5vw;
+    }
+    #rightshow span{
+        font-size: 2.5vw;
+    }
+    #righthide{
+        width:5vw;
+    }
+    .cardfront .title{
+        font-size:2.8vw;
+    }
+    .card:hover .cardfront p{
+        margin-top: 0;
+        font-size: 2vw;
+        height:2.5vh;
+        width:100%;
+    }
+
+}
+
+
+
 
 @media only screen and (min-width: 1000px){
+
+    #right{
+        font-size: 2.5vmax;
+    };
+
     #rightshow{
         width:2.5vw;
     }
