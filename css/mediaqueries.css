@@ -12,7 +12,7 @@
     }
     .card {
         z-index: 3;
-        font-size:1.2vh;
+        font-size:1.2vmax;
         min-width: 30px;
         max-width:350px;
     }
@@ -67,7 +67,7 @@
     }
     .card:hover .cardfront p{
         margin-top: 0;
-        font-size: 2vw;
+        font-size: 2v;
         height:2.5vh;
         width:100%;
     }

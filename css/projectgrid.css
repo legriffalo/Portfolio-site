@@ -213,15 +213,16 @@ align-items: center;
 }
 
 .cardback .info h4{
-  font-size: 2vmin;
+  font-size: 3vmin;
   margin-top:0.3vh;
   margin-bottom: 0.2vh;
 }
 
-.cardback .infoparagraph{
+.info .infoparagragh{
   height:100%;
   width:100%;
-  font-size: 1.5vmin;
+  font-size: 3vmin;
+  /* color:red; */
 display:inline-block;
 }
 
@@ -232,6 +233,7 @@ display:inline-block;
   flex-direction: row;
   justify-content: left;
   gap:1vw;
+  font-size: medium;
 }
 .cardbacklinks i {
   color:black;
