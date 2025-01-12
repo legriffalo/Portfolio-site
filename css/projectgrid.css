@@ -219,8 +219,8 @@ align-items: center;
 }
 
 .info .infoparagragh{
-  height:100%;
-  width:100%;
+  /* height:100%;
+  width:100%; */
   font-size: 3vmin;
   /* color:red; */
 display:inline-block;

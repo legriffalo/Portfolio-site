@@ -12,27 +12,42 @@
     }
     .card {
         z-index: 3;
-        font-size:1.2vmax;
+        font-size:2.5vmax;
         min-width: 30px;
         max-width:350px;
     }
-    .cardfront .title{
-        font-size:3vw;
+    .cardfront .topline .title{
+        font-size:2.3vmax;
     } 
+    .cardfront .bottom p{
+        font-size:2vmax !important;
+
+    }
+
     .card:hover .cardfront p{
         margin-top: 0;
-        font-size: 2vw;
+        font-size: 2vmax;
         height:2.5vh;
         width:100%;
     }
 
     .cardbacklinks i {
-        font-size: 2em;
+        font-size: 2vmax;
     }
+
+    .cardback .info h4{
+        font-size: large;
+    }
+    .info .infoparagragh{
+        font-size: medium;
+    }
+
+
+
 }
 
 /*slightly larger screen*/
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1000px){
     #pic{
         max-width:15vw;
         
@@ -49,7 +64,7 @@
     }
     #right{
         width:80vw;
-        font-size: 3.7vw;
+        font-size: 2.5vw;
 
         
     }
@@ -71,6 +86,24 @@
         height:2.5vh;
         width:100%;
     }
+    .card:hover .cardfront p{
+        margin-top: 0;
+        font-size: 2vmax;
+        height:2.5vh;
+        width:100%;
+    }
+
+    .cardbacklinks i {
+        font-size: 2vmax;
+    }
+
+    .cardback .info h4{
+        font-size: large;
+    }
+    .info .infoparagragh{
+        font-size:medium;
+    }
+
 
 }
 
@@ -80,7 +113,7 @@
 @media only screen and (min-width: 1000px){
 
     #right{
-        font-size: 2.5vmax;
+        font-size: 2vw;
     };
 
     #rightshow{

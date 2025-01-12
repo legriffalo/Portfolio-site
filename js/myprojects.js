@@ -161,7 +161,75 @@ const data = `{
     "links":[{"source":"https://github.com/legriffalo/molkkymadness","type":"github"},
             {"source":"https://legriffalo.github.io/molkkymadness/","type":"site","dim":"width=500,height=800"}],
 
-    "general":["Web","App"]
+    "general":["Web","App","js"]
+
+},
+
+"9":{
+    "show":"1",
+    "inprogress":0,
+
+    "name":"PowerBI projects",
+    "coverimage":"./assets/projects/bi.png",
+    "description":"Repo of powerBI experimental projects",
+    "specifics": ["I like to keep my BU and data skills sharp.",
+                "I have doen some minor consulting/implementation probono for friends and family.",
+                "Data for those projects was proprietary so I made analogous versions using open source data." ],
+    "tags":["Data","Visualisation","ML"],
+    "links":[{"source":"https://github.com/legriffalo/bi-projects","type":"github"}],
+
+    "general":["Data","ML","Visualisation"]
+
+},
+
+"10":{
+    "show":"1",
+    "inprogress":0,
+
+    "name":"Stop watch mobile app",
+    "coverimage":"./assets/projects/timer.png",
+    "description":"A simple App built using Capacitor.js",
+    "specifics": ["This was my first project using capacitor.js",
+                "The app allows users to set timers and keep track of time spent on tasks",
+                "I chose to use this as it was an all-in-one file I made for an old js course so I could focus solely on deploying capacitor"                ],
+    "tags":["Web","App","JavaScript","front-end"],
+    "links":[{"source":"https://github.com/legriffalo/Timer-android-capacitor-app","type":"github"}],
+
+    "general":["web","App","js","capacitor"]
+
+},
+
+"11":{
+    "show":"1",
+    "inprogress":1,
+
+    "name":"Christmas crackers app",
+    "coverimage":"./assets/projects/cracker.png",
+    "description":"Jokes database App",
+    "specifics": ["This is a first test incorporating SQlite and Typescript into web and android applications using capacitor, the app serves oneliners/cracker jokes from a local db on demand.",
+                  "This app uses a mix of LLM generated jokes from an Ollama model and jokes taken from an open dataset to populate a local database in SQLite, this is the backend of the app"
+                  ],
+    "tags":["Web","TypeScript","front-end","back-end","SQL"],
+    "links":[{"source":"https://github.com/legriffalo/christmas-crackers","type":"github"}],
+
+    "general":["web","App","js","capacitor"]
+
+},
+
+"12":{
+    "show":"1",
+    "inprogress":1,
+
+    "name":"Language app 2",
+    "coverimage":"./assets/projects/language2.png",
+    "description":"Language web/mobile App",
+    "specifics": ["The next iteration of my language app",
+                  "This version uses a SQLite database to host a database of 5000 most frequently used Finnish words",
+                  "By using SQLite it allows m to leave the PWA format."],
+    "tags":["Web","TypeScript","front-end","back-end","tailwind","SQL"],
+    "links":[{"source":"https://github.com/legriffalo/language-app-2","type":"github"}],
+
+    "general":["web","App","ts","js","capacitor","SQL"]
 
 }
 
