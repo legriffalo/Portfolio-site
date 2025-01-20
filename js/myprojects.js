@@ -89,7 +89,7 @@ const data = `{
     "general":["data"]
     },
 
-"7":{
+"13":{
     "show":"1",
     "inprogress":0,
 
@@ -209,7 +209,7 @@ const data = `{
     "specifics": ["This is a first test incorporating SQlite and Typescript into web and android applications using capacitor, the app serves oneliners/cracker jokes from a local db on demand.",
                   "This app uses a mix of LLM generated jokes from an Ollama model and jokes taken from an open dataset to populate a local database in SQLite, this is the backend of the app"
                   ],
-    "tags":["Web","TypeScript","front-end","back-end","SQL"],
+    "tags":["Web","TypeScript","front-end","Backend","SQL"],
     "links":[{"source":"https://github.com/legriffalo/christmas-crackers","type":"github"}],
 
     "general":["web","App","js","capacitor"]
@@ -226,7 +226,7 @@ const data = `{
     "specifics": ["The next iteration of my language app",
                   "This version uses a SQLite database to host a database of 5000 most frequently used Finnish words",
                   "By using SQLite it allows m to leave the PWA format."],
-    "tags":["Web","TypeScript","front-end","back-end","tailwind","SQL"],
+    "tags":["Web","TypeScript","front-end","Backend","tailwind","SQL"],
     "links":[{"source":"https://github.com/legriffalo/language-app-2","type":"github"}],
 
     "general":["web","App","ts","js","capacitor","SQL"]
